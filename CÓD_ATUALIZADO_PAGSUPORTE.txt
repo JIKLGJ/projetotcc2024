@@ -1,0 +1,117 @@
+CÓDIGO ATUALIZADO PAG SUPORTE 
+
+
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./suporte.css">
+    <title>suporte </title>
+</head>
+<body>
+    <div class="container">'
+        <div class="card">
+            <h2>Suporte  </h2>
+           
+                <input type="text" name="Ra" placeholder="Seu Ra Ex:000123456789x" required>
+                <input type="email" name="email" placeholder="E-mail para contato" required>
+                <input type="text" name="subject" placeholder="Assunto" required>
+            
+                <textarea name="message" placeholder="relate o erro"></textarea required>
+
+                <button type="submit">Relatar</button>
+                <button  id="botApagar" type="submit">Apagar</button>
+           
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+CSS
+
+
+
+
+
+body {
+    background: linear-gradient(-120deg, #041047, #11031f);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 50%;
+    padding: 40px;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5e3939;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.card textarea {
+    height: 150px; 
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0755ff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #036d1a;
+}
+.card button#botApagar {
+    background-color: #0755ff; 
+    margin-top: 10px; 
+}
+
+.card button#botApagar:hover {
+    background-color: #e63946; 
+}
+
+

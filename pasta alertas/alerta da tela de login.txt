@@ -1,0 +1,19 @@
+
+    function validateFields() {
+        var num1 = document.getElementById("number1").value;
+        var senha = document.getElementById("senha").value;
+        var digito = document.getElementById("digito").value;
+
+        if (num1 === "" || senha === ""  ) {
+           
+           // document.getElementById("error-message").innerText = "Por favor, preencha todos os campos corretamente.";
+        } else if (senha !== "Al.2023#") {
+            document.getElementById("mensagem").innerText =  
+
+            document.getElementById("error-message").innerText 
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Something went wrong!",
+                    footer: '<a href="#">Why do I have this issue?</a>'
+                  });

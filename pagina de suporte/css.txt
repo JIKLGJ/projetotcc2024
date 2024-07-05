@@ -1,0 +1,91 @@
+
+
+body{ 
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+body,              /* deixa todo o site com a mesma fonte que no caso é a san serif*/
+textarea{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.card{   /* aqui esta pesonalizando onde as pessoas possam escrever no seu formulário */
+   
+    box-shadow: 5px 20px 50px #000;
+    border-radius: 8px;
+    width: 700px;
+    padding: 84px 32px;
+    font-size: 24px;
+    border-bottom: #313131;
+}
+
+
+ form{ /* nessa parte está ajustando o formulário dentro da caixa  para que o elementos se ajustem bem */
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+ input,
+ textarea{  /*Estamos dando uma aparência específica para as caixas de texto e áreas onde as pessoas podem escrever dentro do nosso formulário.*/
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #0a0000;
+    padding-left: 16px;  
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+input[name=subject]{ /*este codigo serve para regular a largura do formulario de comentario */
+    width: 100%;
+    border-radius:20px;
+}
+input[name=email]{ /*este codigo serve para regular a largura do formulario de comentario */
+    width: 100%;
+    border-radius:20px;
+}
+input[name=name]{ /*este codigo serve para regular a largura do formulario de comentario */
+    width: 100%;
+    border-radius:20px;
+}
+textarea{ /*serve para regular a altura do formulario de comentario */
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+ button{
+    margin-left: 32%;
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px ;
+    background: #573b8a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+button:hover{
+    background: #6d44b8;
+} 
+
+
+h2{
+    margin-left:38%;
+    color: #fff ;
+}
+.RAeMail{
+   display: flex;
+
+}

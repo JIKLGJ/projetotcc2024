@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <title>Tutoria</title>
+    
+       
+</head>
+<body>
+    <div >
+        <h1>Vote em seu tutoria</h1>
+    </div>
+    <img class="logo" src="logoescola-removebg-preview.png" alt="Tutoria">
+    <div class="card-fundo">
+      
+            <div><input type="text" id="candidato-numero" readonly></div>
+        
+        <div class="button-container">
+            <div>
+                <button onclick="castVote(1)">1</button>
+                <button onclick="castVote(2)">2</button>
+                <button onclick="castVote(3)">3</button>
+            </div>
+            <div>
+                <button onclick="castVote(4)">4</button>
+                <button onclick="castVote(5)">5</button>
+                <button onclick="castVote(6)">6</button>
+            </div>
+            <div>
+                <button onclick="castVote(7)">7</button>
+                <button onclick="castVote(8)">8</button>
+                <button onclick="castVote(9)">9</button>
+            </div>
+            <div>
+                <button type="button" id="largo" onclick="castVote(0)">0</button>
+            </div>
+        </div>
+       
+        <div>
+            <button type="button" class="confirm-button" onclick="validateFields()">Confirmar</button>
+            <button type="button" class="apagar-button" onclick="deleteAll()">Excluir</button>
+            <button type="button" class="limpar-button" onclick="deleteAction()">Apagar</button>
+            <div class="mensagem-erro" id="mensagem-erro"></div>
+        </div>
+    </div>
+   
+    <div class="links">
+        <a href="http://127.0.0.1:3000/login.html">login</a>
+       <a href="http://127.0.0.1:3000/pagina bem-vindo.html">página bem-vindo</a>
+        <a href="http://127.0.0.1:3000/supote.html">Suporte</a>
+    </div>
+    <script src="./Java.js"></script>
+
+    
+</body>
+</html>
