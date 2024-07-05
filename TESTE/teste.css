@@ -1,0 +1,148 @@
+body{ 
+    
+    background: linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 35%, rgba(36,36,62,1) 100%);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    
+    }
+    a {
+    font-size:10px;
+    color: #ebedf0;
+        font-weight: bold; 
+        font-family: Arial, sans-serif; /* define a fonte */
+        margin-left:230px;
+    
+        
+
+
+    }
+
+
+
+    
+    .botao  {
+            
+                width: 10%; /* Define a largura como 100%*/
+                height: 40px;
+                padding: 10px; /* Adiciona preenchimento */
+                background-color: #1148a8 ; /* Define a cor de fundo */
+                color: #fdfdfd; /* Define a cor do texto */
+                border: none; /* Remove a borda */
+                border-radius: 90px; /* Adiciona bordas arredondadas */
+                cursor: pointer; /* Define o cursor como ponteiro */
+            margin-right: 80%;
+            margin-left:180px;
+            margin-top: -10px;
+            }
+        .botao:hover{
+            animation: pulse;
+            animation-duration: 2s;
+        }
+            
+            .RA input {
+        
+                
+                width: 15%; /* Define a largura do campo de entrada */
+                padding: 15px; /* Adiciona preenchimento interno */
+                margin-bottom: 20px; /* Adiciona margem inferior */
+                border: 2px solid #1148a8 ; /* Adiciona uma borda sólida */
+                border-radius: 5px; /* Adiciona bordas arredondadas */
+                box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
+                transition: 0.3s; /* Adiciona uma transição suave */
+                margin-top: 35px; /* Adiciona margem superior */
+                border-radius: 15px;
+                margin-left: 7%;
+            
+            
+            }
+            
+            
+
+            
+    
+            
+            .senha input {
+        
+            
+            
+                width: 15%; /* Define a largura do campo de entrada */
+                padding: 15px; /* Adiciona preenchimento interno */
+                margin-bottom: 20px; /* Adiciona margem inferior */
+                border: 2px solid #1148a8 ; /* Adiciona uma borda sólida */
+                border-radius: 5px; /* Adiciona bordas arredondadas */
+                box-sizing: border-box; /* Inclui o preenchimento e a borda na largura total */
+            
+                margin-top: auto; /* Adiciona margem superior */
+                border-radius: 15px;
+                margin-left: 7%;
+            
+    }
+    #digito {
+    background-color: #fdfdfd;
+    color: #8a66dd;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #1148a8 ; /* Adiciona uma borda sólida */
+    border-radius: 15px;
+    transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+    i{
+        color: transparent;
+    }
+    
+        ::placeholder {
+            color:#8a66dd; /* Mudar para a cor desejada */
+        }
+    
+    
+    .texto{ 
+        margin-top: -17px;
+        margin-left: 160px;
+        font-size: 60px;
+    }
+    
+    h1{font-size: 50px;
+        color: #2a54ae; 
+    margin-left: 20px;}
+    
+    .logo{
+        width: 20%;
+        height: auto;
+    margin-top:30px;
+    margin-left: 5%;
+
+    }
+    
+    
+        
+    
+    
+    .foto{
+        
+        box-shadow: 2px 2px 200px rgb(2, 0, 3);        
+        width: 1250PX;
+        margin-left:590px;
+        border-radius: 45px;
+        margin-top: -650px;
+    
+        
+        }
+    
+        
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+            
+        }
+        input[type=number] { 
+        -moz-appearance: textfield;
+        appearance: textfield;
+        
+        }
+        
+    
+      
+      

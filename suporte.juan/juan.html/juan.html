@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/suporte.juan/juan.css/juan.css">
+    <title>suporte </title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Suporte  </h2>
+
+            <form action=""  name="card">
+
+            
+            <input  type="text" name="name" placeholder="Seu Ra Ex:000123456789xsp" required  maxlength="12" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <input type="email" name="email" placeholder="E-mail para contato : " required>
+            
+        
+            <input type="text" name="subject" placeholder="Assunto:" required>
+            
+            
+                <textarea name="message" placeholder="Relate o erro:"required></textarea>
+               
+             <button type="submit">Relatar</button>  
+                
+            </form>  
+            
+        </div>
+    </div>
+</body>
+<script src="../sup.js/sup.js"></script>
+</html>

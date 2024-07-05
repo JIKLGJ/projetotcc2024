@@ -238,7 +238,7 @@ margin: 40px 0px;
 
 position: relative;
 animation: flutuar 2s ease-in-out infinite alternate;
-
+border-radius: 15px;
 }
 
 
@@ -295,4 +295,11 @@ margin: 15px 0;
 .menu-desktop{
 
 margin: 20px 296px 60px ;
+}
+
+.img{
+
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
 }

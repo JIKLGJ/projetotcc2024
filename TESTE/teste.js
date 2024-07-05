@@ -13,7 +13,7 @@ function mostrarSenha() {
       
 
 }
-  }
+  }''
 
   function validateFields() {
       var num1 = document.getElementById("number1").value;
@@ -21,17 +21,11 @@ function mostrarSenha() {
       var digito = document.getElementById("digito").value;
 
       if (num1 === "" || senha === ""  ) {
-       // document.getElementById("error-message").innerText = "Por favor, preencha todos os campos corretamente.";
+         
+         // document.getElementById("error-message").innerText = "Por favor, preencha todos os campos corretamente.";
       } else if (senha !== "Al.2023#") {
-        document.getElementById("error-message").innerText =  
-
-       
-            Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Something went wrong!",
-                footer: '<a href="#">Why do I have this issue?</a>'
-              });
+           document.getElementById("error-message");
+           document.getElementById("erro").innerText = alert("error");
       } else {
           window.location.href = `http://127.0.0.1:5500/Pagina%20de%20bem%20vindo2/index.html`;
       }
