@@ -143,6 +143,41 @@
             appearance: textfield;
             
             }
+            @media  (max-width:600px){
+
+              .logo{
+                    width: 45%;
+                    height: auto;
+                margin-top:30px;
+                margin-left: 5%;
+            
+                }
+                .foto{
+        
+                    box-shadow: 2px 2px 200px rgb(2, 0, 3);        
+                    width: 600px;
+                    margin-left:390px;
+                    border-radius: 15px;
+                    margin-top: -650px;
+                
+                    
+                    }
+                    .botao  {
+                
+                        width: 25%; /* Define a largura como 100%*/
+                        
+                    }
+                    a {
+                        font-size:15px;
+                        color: #fcfbff; 
+                    }
+                    h1{font-size: 30px;}
+
+                    .texto{ 
+                        
+                       
+                        font-size: 40px;
+            }
             
         
                 
