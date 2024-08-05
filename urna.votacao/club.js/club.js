@@ -25,7 +25,13 @@ function deleteAction() {
     const selectedNumber = inputField.value;
     const mensagemErroElement = document.getElementById("mensagem-erro");
     if (!selectedNumber) {
-        mensagemErroElement.innerText = "Por favor, aperte um número para apagar.";
+        mensagemErroElement.innerText = 
+        Swal.fire({
+            icon: "error",
+            title: "Erro",
+            text: "Erro ao entrar na sua conta!",
+            footer: '<a href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>'
+          });
         mensagemErroElement.style.display = 'block';
         setTimeout(() => {
             mensagemErroElement.style.display = 'none';
