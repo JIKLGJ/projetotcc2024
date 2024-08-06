@@ -132,8 +132,9 @@ display: flex;
 
 }
 
-.btn-contato button{
+header .btn-contato button{
 
+  margin-left: 720px;
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -302,4 +303,22 @@ margin: 20px 296px 60px ;
   height: 170px;
   width: 170px;
   object-fit: cover;
+}
+
+@media (min-width:340px) and (max-width:500px)  { 
+  .topo-do-site .img-topo-site img{
+  display: none;
+  }
+  .h1{
+    font-size: 0px;
+    display: flex;
+  }
+  h2.titulo{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .p{
+    font-size: 15px;
+  }
 }
