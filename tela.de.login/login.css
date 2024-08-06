@@ -10,7 +10,7 @@
         }
         a {
         font-size:10px;
-            color: #5a3ba1; 
+            color: #f1f1f1; 
             font-weight: bold; 
             font-family: Arial, sans-serif; /* define a fonte */
             margin-left:230px; 
@@ -19,11 +19,7 @@
 
 
         }
-        a:hover{
-            color: #007bff;
-
-
-        }
+        
         .botao  {
                 
                     width: 10%; /* Define a largura como 100%*/
