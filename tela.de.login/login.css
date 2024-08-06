@@ -10,7 +10,7 @@
         }
         a {
         font-size:10px;
-            color: #4606db; 
+            color: #ffffff; 
             font-weight: bold; 
             font-family: Arial, sans-serif; /* define a fonte */
             margin-left:230px;
@@ -104,10 +104,11 @@
             margin-top: -17px;
             margin-left: 160px;
             font-size: 60px;
+            color: antiquewhite;
         }
         
         h1{font-size: 50px;
-            color: #2a54ae; 
+            color: antiquewhite; 
         margin-left: 20px;}
         
         .logo{
@@ -143,12 +144,11 @@
             appearance: textfield;
             
             }
-            @media  (max-width:800px){
+            @media  (min-width: 680px) and (max-width: 800px){
 
               .logo{
-                    width: 45%;
+                width: 45%;
                 margin-top:0 auto;
-              
                 margin-left: 25%;
                 
                 }
@@ -158,30 +158,28 @@
                     }
                     .botao  {
                 
-                        width: 25%; /* Define a largura como 100%*/
-                        margin-left: 34%;
+                        width: 22%; /* Define a largura como 100%*/
+                        margin-left: 37%;
                         
                     }
                     a {
-                        font-size:11px;
+                        font-size:10px;
                         color: #f3f8f8; 
                        font-size: center;
-                       margin-left: 40%;
-                        
+                       margin-left: 42%;
                     }
-                    h1{font-size: 35px;
+                    h1{
+                    font-size: 45px;
                     color: antiquewhite;
                     text-align: 120px;
                     display: block;
-                    margin-left: 28%;
-                        
-                    
+                    margin-left: 21%;
                     }
 
                     .texto{ 
                         
                        display: flex;
-                        font-size: 40px;
+                        font-size: 35px;
                         color: antiquewhite;
                         margin-left: 37%;
                         
@@ -195,12 +193,10 @@
         }
         .senha input {
             
-        
-
         border-top: center; 
         width: 20px; 
-        margin-left: 37%; 
-        width: 20%; 
+        margin-left: 35%; 
+        width: 24%; 
         }
         #digito {
 
@@ -208,13 +204,13 @@
         }
         .RA input {
 
-            margin-left: 37%;
+            margin-left: 35%;
             width: 17%;
 
         }
 
     }
-        @media(max-width:600px)  {    
+       @media (min-width:320px)and (max-width:500px)  {    
         
         
 
@@ -222,7 +218,7 @@
                       width: 50%;
                   margin-top:0px auto;
                 
-                  margin-left: 23%;
+                  margin-left: 27%;
                   
                   }
                   .foto{
@@ -232,18 +228,18 @@
                       .botao  {
                   
                           width: 32%; /* Define a largura como 100%*/
-                          margin-left: 32%;
+                          margin-left: 37%;
                           
                       }
                       a {
-                          font-size:13px;
+                          font-size:10px;
                           color: #f3f8f8; 
                          font-size: center;
                          margin-left: 39%;
                           
                       }
-                      h1{font-size: 25px;
-                      color: antiquewhite;
+                      h1{
+                      font-size: 20px;
                       text-align: 120px;
                       display: block;
                       margin-left: 25%;
@@ -254,9 +250,9 @@
                       .texto{ 
                           
                          display: flex;
-                          font-size: 34px;
-                          color: antiquewhite;
-                          margin-left: 37%;
+                          font-size: 23px;
+                          
+                          margin-left: 40%;
                           
   
   
@@ -272,17 +268,21 @@
   
           border-top: center; 
          
-          margin-left: 35%; 
-          width: 26%; 
+          margin-left: 20%; 
+          width: 64%; 
+          
           }
           #digito {
   
-              margin-left: 0%;  
+              margin-left: 0%; 
+              width: 13%;
+               
           }
           .RA input {
   
-              margin-left: 35%;
-              width: 17%;
+              margin-left: 20%;
+              width: 50%;
+              
   
           }
         }
