@@ -17,11 +17,28 @@
        
             
             <input type="text" name="ra" id="ra" placeholder="Digite seu RA" maxlength="12" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-        
+           
+            
+                        
+                  
+                <select id="digito"  class="digito" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="x" selected="">X</option >
+                
+                </select>
+                
+
         <div> <button type="button" onclick="validateAndRedirect()">Acesse a senha</button></div>
            
-         <p>
-            <a href="http://127.0.0.1:3000/login.html">Voltar para o cadastro</a>
+         
+            <a href="http://127.0.0.1:5500/tela.de.login/login.html">Voltar para o cadastro</a>
         
     </div>
     <div class="error-message" id="error-message"></div>

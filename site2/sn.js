@@ -12,7 +12,7 @@ function validateAndRedirect() {
     
         errorMessageElement.style.display = 'none';
     } else {
-        errorMessageElement.innerText = "Por favor, insira um RA válido de 12 dígitos começando com 000.";
+        errorMessageElement.innerText = "Por favor, insira um RA válido";
         errorMessageElement.style.display = 'block';
         setTimeout(() => {
             errorMessageElement.style.display = 'none';

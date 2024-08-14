@@ -27,8 +27,9 @@ function mostrarSenha() {
         Swal.fire({
             icon: "error",
             title: "Erro",
-            text: "assine os campos corretamente",
-            footer: '<a href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>',
+            text: "preencha corretamente os campos",
+            footer: '<a  class="al"  href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>'
+            
           });
       } else if (senha !== "Al.2023#" || num1 !== "000108453230")  {
         document.getElementById("error-message").innerText =  
@@ -37,7 +38,7 @@ function mostrarSenha() {
             Swal.fire({
                 icon: "error",
                 title: "Erro",
-                text: "Erro ao entrar na sua conta!",
+                text: "Erro ao entrar na sua conta",
                 footer: '<a href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>'
               });
       } else {
