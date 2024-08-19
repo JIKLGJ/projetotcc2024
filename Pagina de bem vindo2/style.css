@@ -306,19 +306,47 @@ margin: 20px 296px 60px ;
 }
 
 @media (min-width:340px) and (max-width:500px)  { 
+ 
+ .flex{
+  flex-direction: column-reverse;
+ 
+  
+ }
+ 
+
   .topo-do-site .img-topo-site img{
-  display: none;
+    width: 175px;
+   margin-right: -1
+
+
+  
   }
-  .h1{
-    font-size: 0px;
-    display: flex;
+  #h1-bemvindo{
+font-size: 23px;
   }
   h2.titulo{
+
+    display: none;
+  }
+
+  p{
     font-size: 20px;
-    text-align: center;
+    margin-left: 30px;
   }
-  
-  .p{
-    font-size: 15px;
+  .especialidades-box{
+    display:flex;
   }
+
+  .img{
+  margin-left: 160px; 
+  max-width: 150px;
+  }
+
+a{
+width: 70px;
+margin-right: 0px;
+max-width: 60;
+}
+
+
 }
