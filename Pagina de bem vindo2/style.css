@@ -338,15 +338,43 @@ font-size: 23px;
   }
 
   .img{
-  margin-left: 160px; 
+  margin-left: -523px; 
   max-width: 150px;
   }
 
-a{
-width: 70px;
-margin-right: 0px;
-max-width: 60;
-}
+
+.menu-desktop{
+  
+  margin-left: 100px;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    
+ }
+ ul{
+  display: flex;
+  gap: 0px;
+ 
+  width: 90%;
+  font-size: 16px;
+  justify-content: space-around;
+  margin-left: -50px;
+  
+
+ }
+ .interface{
+  display: flex;
+  flex-direction: column;
 
 
+ }
+ 
+ header{
+  display: flex;
+  flex-direction: column;
+ }
+ 
 }
+

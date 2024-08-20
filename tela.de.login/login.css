@@ -10,11 +10,11 @@
         }
         a {
         font-size:10px;
-<<<<<<< HEAD
+
             color: #f1f1f1; 
-=======
+
             color: #ffffff; 
->>>>>>> 63688f78c462b113102eb57fff600033865bcf85
+
             font-weight: bold; 
             font-family: Arial, sans-serif; /* define a fonte */
             margin-left:230px; 
@@ -60,11 +60,6 @@
                 
                 }
                 
-                
-
-                
-        
-                
                 .senha input {
             
                 
@@ -108,11 +103,10 @@
         }
         
         h1{font-size: 50px;
-<<<<<<< HEAD
+
             color: #adadff; 
-=======
+
             color: antiquewhite; 
->>>>>>> 63688f78c462b113102eb57fff600033865bcf85
         margin-left: 20px;}
         
         .logo{
@@ -143,29 +137,14 @@
             appearance: textfield;
             
             }
-<<<<<<< HEAD
-            @media (max-width:375px){
 
-                .logo{
-
-              width: 80%;      
-                }
-                .foto{
-
-                    width: 20px;
-                }
-                
-            }
-            
-        
-=======
             @media  (min-width: 680px) and (max-width: 800px){
 
               .logo{
                 width: 45%;
                 margin-top:0 auto;
                 margin-left: 25%;
->>>>>>> 63688f78c462b113102eb57fff600033865bcf85
+
                 
                 }
                 .foto{
