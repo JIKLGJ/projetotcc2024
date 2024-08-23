@@ -243,6 +243,7 @@ border-radius: 15px;
 }
 
 
+
 @keyframes flutuar{
 
 0%{
@@ -313,9 +314,9 @@ margin: 20px 296px 60px ;
   
  }
  
-
+  /*imagem vote*/ 
   .topo-do-site .img-topo-site img{
-    width: 175px;
+    width: 190px;
    margin-right: -1
 
 
@@ -324,11 +325,7 @@ margin: 20px 296px 60px ;
   #h1-bemvindo{
 font-size: 23px;
   }
-  h2.titulo{
-
-    display: none;
-  }
-
+  
   p{
     font-size: 20px;
     margin-left: 30px;
@@ -337,11 +334,13 @@ font-size: 23px;
     display:flex;
   }
 
-  .img{
-  margin-left: -523px; 
-  max-width: 150px;
-  }
+  /*logo da escola*/
 
+ .img{
+  margin-left: -490px; 
+  max-width: 170px;
+ 
+  }
 
 .menu-desktop{
   
@@ -350,18 +349,16 @@ font-size: 23px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-    
+  gap:  60px;   
  }
  ul{
   display: flex;
   gap: 0px;
- 
   width: 90%;
   font-size: 16px;
   justify-content: space-around;
-  margin-left: -50px;
   
+ 
 
  }
  .interface{
@@ -374,7 +371,16 @@ font-size: 23px;
  header{
   display: flex;
   flex-direction: column;
+  
  }
  
+ /*clube tutoria gremio*/
+
+ header a{
+font-size: 15px;
+margin: 15px -100px 30px 30px;
+margin-left: -30px;
+ }
+
 }
 

@@ -161,3 +161,59 @@ margin-top: 13px;
 
     margin-top: 13px;
 }
+@media (min-width:340px) and (max-width:500px){
+
+    .botãopadrão{
+        margin-left: 100px;
+    }
+    h1{
+    margin-left: 10px;    
+    }
+    img{
+     width: 220px; 
+     margin-right: 88px;
+     
+    }
+    .card-fundo{
+        margin: 0 auto;
+    width: 240px;
+  height: 350px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(9, 22, 136, 0.336);
+    box-shadow: 8px 8px 35px rgb(2, 0, 3); 
+  
+    }
+    button {
+        font-size: 24px;
+        width: 60px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgb(48, 27, 155);
+        color: rgb(238, 227, 227);
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+    #largo {
+        font-size: 24px;
+        width: 210px;
+        height: 40px;
+        border-radius: 15px;
+        cursor: pointer;
+        background-color: rgb(48, 27, 155);
+        color: rgb(238, 227, 227);
+        transition: background-color 0.3s;
+        margin: 5px;
+    }
+    #candidato-numero {
+      width: 180px;
+       
+    }
+    .confirm-button {
+       
+        width: 150px;
+        
+       
+}
+}

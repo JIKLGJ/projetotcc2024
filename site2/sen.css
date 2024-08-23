@@ -85,6 +85,11 @@ a:hover {
     margin-top: 10px;
     font-size: 25px;
     display: none; 
-
   
+}
+@media (min-width:430px) and (max-width:500px){
+
+ .card-senha{
+    width: 250px;
+ }   
 }
