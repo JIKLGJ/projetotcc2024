@@ -22,14 +22,11 @@ a {
 
     
 }
-a:hover{color: #2fdf4c;
-
-}
 button {
     font-size: 24px;
     width: 90px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     background-color: rgb(48, 27, 155);
     color: rgb(238, 227, 227);
@@ -38,9 +35,7 @@ button {
 }
 button:hover {
     
-    width: 95px;
-    font-size: 27px;
-    height: 50;
+    
     color: black;
     background-color: white;
     transition: background-color 1s;
@@ -55,12 +50,7 @@ button:hover {
     transition: background-color 0.3s;
     margin: 5px;
 }
-.confirm-button:hover {
-    background-color: #06b30f;
-    width: 95px;
-    font-size: 17px;
-    color: white;
-}
+
 .apagar-button {
     background-color: #d61111fa;
     color: black;
@@ -71,12 +61,7 @@ button:hover {
     transition: background-color 0.3s;
     margin: 5px;
 }
-.apagar-button:hover {
-    background-color: #ff0000;
-    width: 90px;
-    font-size: 17px;
-    color: white;
-}
+
 .limpar-button {
     background-color: #ffffffe3;
     color: rgb(0, 0, 0);
@@ -87,18 +72,13 @@ button:hover {
     transition: background-color 0.3s;
     margin: 5px;
 }
-.limpar-button:hover {
-    background-color: #3a3939;
-    color: rgb(255, 255, 255);
-    width: 90px;
-    font-size: 17px;
-}
+
 .card-fundo {
     margin: 0 auto;
     width: 340px;
   height: 320px;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: rgba(9, 22, 136, 0.336);
     box-shadow: 8px 8px 35px rgb(2, 0, 3); 
   
@@ -107,7 +87,7 @@ button:hover {
     font-size: 24px;
     width: 300px;
     height: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     background-color: rgb(48, 27, 155);
     color: rgb(238, 227, 227);
@@ -115,10 +95,6 @@ button:hover {
     margin: 5px;
 }
 #largo:hover {
-   
-    width: 305px;
-    font-size: 27px;
-    height: 50;
     color: black;
     background-color: white;
     transition: background-color 1s;

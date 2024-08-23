@@ -15,36 +15,6 @@ function mostrarSenha() {
 }
   }
 
-  function validateFields() {
-      var num1 = document.getElementById("number1").value;
-      var senha = document.getElementById("senha").value;
-      var digito = document.getElementById("digito").value;
-
-      if (num1 === "" || senha === ""  ) {
-        document.getElementById("error-message").innerText =  
-
-       
-        Swal.fire({
-            icon: "error",
-            title: "Erro",
-            text: "preencha corretamente os campos",
-            footer: '<a  class="al"  href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>'
-            
-          });
-      } else if (senha !== "Al.2023#" || num1 !== "000108453230")  {
-        document.getElementById("error-message").innerText =  
-
-       
-            Swal.fire({
-                icon: "error",
-                title: "Erro",
-                text: "Erro ao entrar na sua conta",
-                footer: '<a href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>'
-              });
-      } else {
-          window.location.href = `http://127.0.0.1:5500/Pagina%20de%20bem%20vindo2/index.html`;
-      }
-  }
 
 function maxlen(input){
   if ( input.value.length >13){
@@ -58,3 +28,25 @@ document.getElementById("number1").onkeypress = function(e) {
     return false;
 };
 
+
+function validacao() {
+  let num1 = document.getElementById("number1").value;
+ let senha = document.getElementById("senha").value;
+ let digito = document.getElementById("digito").value;
+ 
+
+  if (num1 === "" || senha === ""  ) {
+    
+    document.getElementById("error-message").innerText =  "Sua senha é Al.2023#"
+
+   
+    
+  } else if (senha !== "Al.2023#" || num1 !== "000108453230")  {
+    document.getElementById("error-message").innerText =  "Sua senha é Al.2023#" 
+  } 
+  
+  
+  else {
+      window.location.href = `http://127.0.0.1:5500/Pagina%20de%20bem%20vindo2/index.html`;
+  }
+}

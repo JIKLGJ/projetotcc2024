@@ -76,9 +76,8 @@ textarea{ /*serve para regular a altura do formulario de comentario */
     cursor: pointer;
     transition: .2s ease-in;
 }
-button:hover{
-    background: #6d44b8;
-} 
+
+ 
 
 
 h2{
@@ -99,4 +98,3 @@ a {
     transition: 0.3s;}
     
 
-a:hover{color: #2ab942;}
