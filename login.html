@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                                          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">                              
+    <link rel="stylesheet" href="./login.css">
+                               
+                     
+                             
+<title>Honorina</title>
+</head>
+<body>
+    <div class="login-form">        
+            <h1>E.E Honorina R. C. Mello </h1>        
+            <h1 class="texto"> Alumínio</h1>
+        
+            <img class="logo"
+                src="https://i.ibb.co/HX9MZkQ/63c77a07-26d7-4fa2-a47c-51cb487e27ce-removebg-preview.png "
+            alt="63c77a07-26d7-4fa2-a47c-51cb487e27ce-removebg-preview" >
+            <div class="RA" >
+                    
+                <input type="text"  id="number1" placeholder="RA EX:0000109344520" > 
+                        <select id="digito"  class="digito" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option  value="x" selected="">X</option >
+                        
+                        </select>
+            </div>
+
+            <div class="senha">
+              
+                    <input type="password" id="senha" name="senha" placeholder="Senha"> 
+                    <i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i>
+
+                </div>
+                              <dialog class="modal" id="modal">
+                                <h1 id="msgh1"> Erro</h1>
+                                <h2 class="msgh2"> campos de Ra ou senha incorretos</h2>
+                     <button>ok</button>
+                  
+                              </dialog>
+            <button type="button" id="abrirModal" class="botao" onclick="validacao()">Entrar</button>
+           
+    </div>
+       
+
+ 
+              
+  
+                            
+                           
+                            
+                        </div>
+</div>
+
+<!--LINK esqueceu a senha-->
+<a id="Esqueceu" href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>
+
+<div> 
+<a href="http://127.0.0.1:5500/site2/suporte.html">Suporte</a>
+</div>
+
+<!--
+<div class="error-message" id="error-message"></div>
+-->
+
+        
+<img class="foto" src="https://i.ibb.co/dtK6dqS/foto.jpg" alt="foto">
+
+
+<script src="./login.js" > </script>
+</body>
+</html> 
