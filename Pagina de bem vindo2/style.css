@@ -5,6 +5,8 @@
     box-sizing: border-box;
 
     
+    /* mexer nessas fonts*/
+    
     .poppins-thin {
         font-family: "Poppins", sans-serif;
         font-weight: 100;
@@ -132,9 +134,8 @@ display: flex;
 
 }
 
-header .btn-contato button{
+main .btn-contato button{
 
-  margin-left: 720px;
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -191,8 +192,8 @@ list-style-type: none;
 header nav ul li{
 
 display: inline-block;
-padding: 0 40px;
-
+padding: 0 30px;
+text-align: center;
 }
 
 .btn-contato button:hover{
@@ -258,12 +259,14 @@ border-radius: 15px;
 
 section.especialidades{
 
-  padding: 40px 4%;
+  padding: 60px 4%;
+  
 }
 
 section.especialidades .flex{
 
   gap: 60px;
+
 }
 
 
@@ -274,6 +277,7 @@ section.especialidades .flex{
   border-radius: 20px;
   margin-top: 45px;
   transition: .2s;
+  margin-left: 80px;
 }
 
 .especialidades .especialidades-box:hover{
@@ -288,11 +292,7 @@ section.especialidades .flex{
   color: #1daaf1;
 }
 
-.especialidades .especialidades-box h3{
 
-font-size: 28px;
-margin: 15px 0;
-}
 
 .menu-desktop{
 
@@ -305,6 +305,9 @@ margin: 20px 296px 60px ;
   width: 170px;
   object-fit: cover;
 }
+
+
+/*responsividadee*/
 
 @media (min-width:340px) and (max-width:500px)  { 
  
