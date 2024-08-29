@@ -1,63 +1,84 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-                                              
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
-                                            <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.min.css" rel="stylesheet">
-                                   <link rel="stylesheet" href="./login.css">
-                                   
-                         
-                                 
-    <title>Honorina</title>
-
-
-            <div class="login-form">
-            
-                <h1>E.E Honorina R. C. Mello </h1>
-            
-                <h1 class="texto"> Alumínio</h1>
-            
-                <img class="logo"
-                src="https://i.ibb.co/HX9MZkQ/63c77a07-26d7-4fa2-a47c-51cb487e27ce-removebg-preview.png" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                                          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">                              
+    <link rel="stylesheet" href="./login.css">
+                               
+                     
+                             
+<title>Honorina</title>
+</head>
+<body>
+    <div class="login-form">        
+            <h1>E.E Honorina R. C. Mello </h1>        
+            <h1 class="texto"> Alumínio</h1>
+        
+            <img class="logo"
+                src="https://i.ibb.co/HX9MZkQ/63c77a07-26d7-4fa2-a47c-51cb487e27ce-removebg-preview.png "
             alt="63c77a07-26d7-4fa2-a47c-51cb487e27ce-removebg-preview" >
-            
-
+            <div class="RA" >
                     
-                    <div class="RA" >
+                <input type="text"  id="number1" placeholder="RA EX:0000109344520" > 
+                        <select id="digito"  class="digito" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option  value="x" selected="">X</option >
                         
-                            <input type="text"  id="number1" placeholder="RA EX:0000109344520" max="1"  > 
-                            <select id="digito"  class="digito" >
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option vbtion value="x" selected="">X</option >
-                            
-                            </select>
-                        </div>
-                    
-                        <div class="senha">
-
-                            <input type="password" id="senha" name="senha" placeholder="Senha"  maxlength="999" >
-                        
-                            <div><i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i></div>
-                            
-                        </div>   
-                        <button type="button" id="Entrar" class="botao" onclick="validateFields()">Entrar</button>
-                    </div>
+                        </select>
             </div>
-            <a href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>
 
-                    <img class="foto" src="https://i.ibb.co/dtK6dqS/foto.jpg" alt="foto">
-                    <div class="card"></div>
-                </button>
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.0/dist/sweetalert2.all.min.js"></script>
-                    <script src="./login.js" ></script>
-    </body>
-    </html> 
+            <div class="senha">
+              
+                    <input type="password" id="senha" name="senha" placeholder="Senha"> 
+                    <i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i>
+
+                </div>
+                              <dialog class="modal" id="modal">
+                                    <div class="metade" id="cima">
+                                      <div class="circulo">
+                                       <img class="x" src="https://freepngtransparent.com/wp-content/uploads/2023/03/X-Png-109.png" alt="">
+                                        
+                                      </div>
+                                  
+                                    </div>
+                                    <div class="metade" id="baixo">
+                                      <p id="ops">Preencha todos os campos corretamente </p>
+                                      <p id="mensagem" >Seu RA ou sua Senha estão incorretos!</p>
+                                      <button id="okButton" class="okButton"> OK </button>
+                                  
+                                    </div>
+                  
+                              </dialog>
+            <button type="button" id="abrirModal" class="botao" onclick="validacao()">Entrar</button>
+           
+    </div>
+                        </div>
+</div>
+
+<!--LINK esqueceu a senha-->
+<a id="Esqueceu" href="http://127.0.0.1:5500/site2/senha.html">Esqueceu a senha?</a>
+
+<div> 
+<a href="http://127.0.0.1:5500/site2/suporte.html">Suporte</a>
+</div>
+
+<!--
+<div class="error-message" id="error-message"></div>
+-->
+
+        
+<img class="foto" src="https://i.ibb.co/dtK6dqS/foto.jpg" alt="foto">
+
+
+<script src="./login.js" > </script>
+</body>
+</html> 
