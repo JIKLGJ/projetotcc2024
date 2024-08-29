@@ -3,10 +3,12 @@ var inputPass  = document.getElementById('senha');
 var bntShowpass = document.querySelector('#bnt-senha');
 var btnEntrar = document.querySelector('#Entrar')
 
-const modal = document.querySelector("#modal")
+var botao = document.querySelector("#abrirModal")
+var modal = document.querySelector("#modal")
+
 const ra = document.querySelector("#number1")
 const senha = document.querySelector("#senha")
-const botao = document.querySelector("#abrirModal")
+const okButton = document.querySelector('#okButton');
 
 
 botao.addEventListener('click', () => {
@@ -46,3 +48,16 @@ function mostrarSenha() {
   }
 }
   
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  
+
+  okButton.addEventListener('click', () => {
+      modal.close(); // Fecha o modal
+  });
+
+  document.queryselector('#abrirModal').addEventListener('click', () => {
+      
+  });
+});
