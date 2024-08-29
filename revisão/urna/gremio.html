@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./gremio.css">
+    <title>gremio</title>
+
+
+</head>
+<body>
+    <div >
+        <h1>Vote em sua chapa</h1>
+    </div>
+    <img class="logo" src="logoescola-removebg-preview.png" alt="Tutoria">
+    <div class="card-fundo">
+
+            <div><input type="text" id="candidato-numero" readonly></div>
+
+        <div class="botão-padrão">
+            <div>
+                <button onclick="castVote(1)">1</button>
+                <button onclick="castVote(2)">2</button>
+                <button onclick="castVote(3)">3</button>
+            </div>
+            <div>
+                <button onclick="castVote(4)">4</button>
+                <button onclick="castVote(5)">5</button>
+                <button onclick="castVote(6)">6</button>
+            </div>
+            <div>
+                <button onclick="castVote(7)">7</button>
+                <button onclick="castVote(8)">8</button>
+                <button onclick="castVote(9)">9</button>
+            </div>
+            <div class="zero">
+                <button type="button" id="largo" onclick="castVote(0)">0</button>
+            </div>
+        </div>
+
+        <div class="botão-especial">
+            <button type="button" class="confirm-button" onclick="validateFields()">Confirmar</button>
+            <dialog>
+                <h2>seu voto foi comfirmado
+
+                </h2>
+
+                <button class="ok">
+                    ok
+                </button>
+
+                </dialog >
+
+                <dialog id=erroConfirmar>
+
+                    <h2>
+                        Por favor, aperte em um número para confirmar
+                    </h2>
+
+                    <button class="ok">
+                        ok
+
+                </dialog>
+
+            <button type="button" class="apagar-button" onclick="deleteAll()">Excluir</button>
+
+            <dialog id="Excluir">
+
+                <h3>seu voto foi cancelado
+
+                </h3>
+
+                <button class="ok">
+                    ok
+                </button>
+
+                </dialog>
+
+                <dialog id="modalexcluir">
+                    <h2>
+                        Por favor, aperte um número para excluir
+                    </h2>
+
+                    <button class="ok">
+                        ok
+                    </button>
+                </dialog>
+
+            <button type="button" class="limpar-button" onclick="deleteAction()">Apagar</button>
+           <dialog id="modalapagar">
+            <h2>
+                Por favor, aperte um número para apagar.
+            </h2>
+
+            <button class="ok">
+                ok
+            </button>
+           </dialog>
+
+        </div>
+    </div>
+
+    <div class="links">
+
+       <a href="http://127.0.0.1:3000/pagina bem-vindo.html">voltar</a>
+        <a href="http://127.0.0.1:3000/supote.html">Suporte</a>
+    </div>
+    <script src="./gremio.js"></script>
+
+
+</body>
+</html>
