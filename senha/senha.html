@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sen.css">
+    <title>Senha</title>
+
+</head>
+<body>
+
+    <h1>Coloque seu RA para receber a senha</h1>
+
+    <img class="logo" src="logoescola-removebg-preview.png" alt="Imagem">
+
+    <div class="card-senha">
+
+            <div >
+            <input type="text" name="ra" id="ra" placeholder="Digite seu RA" maxlength="12" >
+
+            <select id="digito"  class="digito" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option  value="x" selected="">X</option >
+
+            </select>
+        </div>
+
+        <div> <button type="button" onclick="validateAndRedirect()">Acesse a senha</button>
+
+<dialog>
+<h2>sua senha é:
+
+</h2>
+<P>
+   Al.2023# 
+</P>
+<button class="ok">
+    ok
+</button>
+
+</dialog>
+
+
+<dialog id="erro">
+    <h2>
+        Por favor, insira um RA válido
+    </h2>
+
+    <button class="ok">
+        ok
+    </button>
+
+    </dialog>
+
+
+        </div >
+
+        <div class="link">
+            <a href="http://127.0.0.1:5502/tela.de.login/login.html">Voltar para o cadastro</a>
+        </div>
+
+
+
+   
+    <script src="sn.js"></script>
+
+</body>
+</html>

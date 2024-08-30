@@ -386,6 +386,10 @@ body{
           
 
       }
+      .modal {
+        border-radius: 20px;
+     border: solid 2px #dbd6d6;
+  }
     }
 
 
