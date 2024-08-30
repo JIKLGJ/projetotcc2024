@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Define o box-sizing como border-box */
 }
 
 /* Define a cor de fundo e a altura do corpo da página */
@@ -127,6 +127,7 @@ section.topo-do-site .flex {
   0% {
       top: 0; /* Posição inicial da animação */
   }
+
   100% {
       top: 30px; /* Posição final da animação */
   }
@@ -182,86 +183,99 @@ section.especialidades .flex {
 
 @media (min-width:340px) and (max-width:500px)  { 
  
- .flex{
-  flex-direction: column-reverse;
- 
+  .flex{
+   flex-direction: column-reverse;
   
- }
- 
-  /*imagem vote*/ 
-  .topo-do-site .img-topo-site img{
-    width: 190px;
-   margin-right: -1
-
-
-  
-  }
-  #h1-bemvindo{
-font-size: 23px;
+   
   }
   
-  p{
-    font-size: 20px;
-    margin-left: 30px;
+   /*imagem vote*/ 
+   .topo-do-site .img-topo-site img{
+     width: 190px;
+    margin-right: -1
+ 
+ 
+   
+   }
+   /*seja bem vindo ao site...*/
+   #h1-bemvindo{
+ font-size: 23px;
+ 
+   }
+   
+   p{
+     font-size: 20px;
+     margin-left: 30px;
+     
+   }
+    /*nomes das redes sociais*/
+   .especialidades-box{
+    margin-right: 10px;
+    font-size: 15px;
+    
+    
+   
+   }
+ 
+   /*logo da escola*/
+ 
+  .img{
+   margin-left: 30px; 
+   max-width: 170px;
+  
+   }
+ 
+ .menu-desktop{
+   
+   margin-left: 100px;
+   margin: 0%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:  60px;   
+   
   }
-  .especialidades-box{
-    display:flex;
+  ul{
+   display: flex;
+   gap: 25px;
+   width: 90%;
+   font-size: 16px;
+   justify-content: space-around;
+ 
+  
+ 
   }
-
-  /*logo da escola*/
-
- .img{
-  margin-left: -490px; 
-  max-width: 170px;
-  margin: 9px 4px 100px 30px;
+  .interface{
+   display: flex;
+   flex-direction: column;
+ 
+ 
   }
-
-.menu-desktop{
   
-  margin-left: 100px;
-  margin: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:  60px;   
+  header{
+   display: flex;
+   flex-direction: column;
+  
+  }
+  
+  /*clube tutoria gremio*/
+ 
+  header a{
+ font-size: 15px;
+ margin: 45px -100px 30px 30px;
+ margin-left: -110px;
+ 
+  }
+ 
+ .btn-contato{
+ margin-left: 80px;
+ }
+ 
  }
 
  
- ul{
-  display: flex;
-  gap: 0px;
-  width: 90%;
-  font-size: 16px;
-  justify-content: space-around;
+ @media(orientation:landscape){
   
+   
+  }
  
-
- }
- .interface{
-  display: flex;
-  flex-direction: column;
-
-
- }
- 
- header{
-  display: flex;
-  flex-direction: column;
-  
-  
- }
- 
- /*clube tutoria gremio*/
-
- header a{
-font-size: 15px;
-margin: 9px 4px 100px 30px;
-margin-left: -30px;
- }
-
- h3{
-  padding-left: 18px;
- }
-
-}
-
