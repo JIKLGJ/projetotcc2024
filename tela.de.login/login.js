@@ -21,14 +21,21 @@ botao.addEventListener('click', () => {
     modal.showModal(); // Exibe o modal para indicar sucesso
   } else {
     
+<<<<<<< HEAD
+    window.location.href = `http://127.0.0.1:5500/index.html`;
+=======
     window.location.href = `http://127.0.0.1:5500/Pagina%20de%20bem%20vindo2/index.html`;
+>>>>>>> bbe43345e644dde3ae73b1f4bd57c7bb4e75bed4
   }
 });
 
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> bbe43345e644dde3ae73b1f4bd57c7bb4e75bed4
 function mostrarSenha() {
 
   if(inputPass.type === 'password'){

@@ -310,6 +310,7 @@ body{
 
         margin-left: 35%;
         width: 17%;
+       
 
     }
 
@@ -384,7 +385,7 @@ body{
           margin-left: 20%;
           width: 50%;
           
-
+      }
      .metade{
         width: 240px;
         height: 190px;
@@ -474,3 +475,4 @@ body{
 
 
     /*AQUI ACABA O MEDIA QUERY*/
+  
