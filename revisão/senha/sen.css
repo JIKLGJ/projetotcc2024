@@ -69,16 +69,8 @@ a {
     cursor: pointer;
     transition: 0.3s;
 }
-a:hover {
-    color: #16df0f;
-}
-.error-message {
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-    font-size: 15px;
-    display: none; 
-   
-}
+
+
 dialog::backdrop{
     background-color: rgb(3, 3, 36);
     opacity: 0.5;
@@ -178,16 +170,7 @@ p{
         font-size: 13px;
       
     }
-    a:hover {
-        color: #16df0f;
-    }
-    .error-message {
-        color: rgb(255, 255, 255);
-        
-        font-size: 13px;
-        display: none; 
-       
-    }
+   
     dialog::backdrop{
         background-color: rgb(3, 3, 36);
         opacity: 0.5;
