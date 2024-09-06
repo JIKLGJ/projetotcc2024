@@ -80,8 +80,9 @@ header nav ul {
 /* Estilo para itens da lista dentro da navegação do cabeçalho */
 header nav ul li {
   display: inline-block; /* Exibe itens da lista horizontalmente */
-  padding: 0 20px; /* Espaçamento horizontal ao redor dos itens */
+  padding: 0 30px; /* Espaçamento horizontal ao redor dos itens */
   text-align: center; /* Alinhamento centralizado do texto nos itens da lista */
+  font-size: 20px;
 }
 
 /* Estilo para botões dentro da classe .btn-contato ao passar o mouse sobre eles */
@@ -113,6 +114,7 @@ section.topo-do-site .flex {
 .topo-do-site .txt-topo-site p {
   color: #ffffff; /* Cor do texto dos parágrafos */
   margin: 40px 0px; /* Margem superior e inferior dos parágrafos */
+  font-size: 20px;
 }
 
 /* Estilo para imagens dentro da seção topo-do-site */
@@ -278,4 +280,3 @@ section.especialidades .flex {
   
    
   }
- 
