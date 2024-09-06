@@ -21,6 +21,7 @@ body {
 /* Define o comportamento de exibição como flexível */
 .flex {
   display: flex;
+  
 }
 
 /* Estilo para botões na classe .btn-contato dentro de main */
