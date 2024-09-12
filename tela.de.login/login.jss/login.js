@@ -21,7 +21,7 @@ botao.addEventListener('click', () => {
     modal.showModal(); // Exibe o modal para indicar sucesso
   } else {
     
-    window.location.href = `http://127.0.0.1:5500/Pagina%20de%20bem%20vindo2/index.html`;
+    window.location.href = "../../tela de bem vindo/tela de bem vindo.html";
   }
 });
 
