@@ -15,10 +15,9 @@ body {
     border: 1px solid rgb(0, 0, 0);
     padding: 25px;
     border-radius: 30px;
+    background: linear-gradient(90deg, rgb(39, 39, 87) 0%, rgb(53, 45, 141) 35%, rgb(39, 39, 87) 100%);
+    box-shadow: 2px 0px 100px rgb(2, 0, 3);
    
-    box-shadow: 2px 2px 200px rgb(2, 0, 3);
-    background: linear-gradient(90deg, rgb(9, 2, 92) 0%, rgba(17,17,147,1) 35%, rgb(3, 3, 102) 100%);
-
 }
 
 #ra {
@@ -36,7 +35,7 @@ button {
    width: 200px;
    height: 50px;
    margin: 20px;
-   background-color: #1034d6;
+   background-color: #1136db;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 800;
@@ -45,8 +44,8 @@ button {
     margin-top: 0 auto;
 }
 button:hover {
-    
-    background-color: #31e23a;
+    transform: scale(1.05);
+    background-color: #1e06f7;
     color: rgb(250, 244, 244);
 
 }
