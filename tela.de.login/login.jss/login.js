@@ -64,9 +64,16 @@ async function POST() {
  
 
 botao.addEventListener('click', () => {
-  if (ra.value === '' || senha.value === '' || (ra.value !== '000108453230' || senha.value !== 'Al.2023#')) {
+  if (ra.value === '' || senha.value === '' || (ra.length<12 || senha.value != 'Al.2023#'
+ 
+  )) {
     modal.showModal(); // Mostra o modal se algum campo estiver vazio ou as credenciais estiverem incorretas
-  } else  {
+
+  }
+  
+
+  
+  else  {
     POST(); 
   
   } 
