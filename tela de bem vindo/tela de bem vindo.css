@@ -24,6 +24,24 @@ body {
   
 }
 
+
+.SAIR a{
+
+  margin-left: 375px;
+  color: #1dd1f1; /* Cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  display: inline-block; /* Permite aplicar padding e margin */
+  transition: .2s; /* Transição suave para propriedades alteradas */
+  
+
+}
+ 
+.SAIR a:hover{
+
+  transform: scale(1.05); /* Aumenta o tamanho do link levemente */
+  color: #ffffff;
+}
+
 /* Estilo para botões na classe .btn-contato dentro de main */
 main .btn-contato button {
   padding: 10px 40px; /* Espaçamento interno do botão */
@@ -274,9 +292,17 @@ section.especialidades .flex {
  margin-left: 80px;
  }
  
+ .SAIR a{
+    margin-left: 180px;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+  
  }
 
- 
+ }
+
+
+
+
  @media(orientation:landscape){
   
    
