@@ -11,25 +11,46 @@
         <div class="card">
             <h2>Suporte</h2>
 
-            <form action=""name="card">
-
             
-            <input  type="text" name="name" placeholder="Seu Ra Ex:000123456789xsp" required  maxlength="12" >
-            <input type="email" name="email" placeholder="E-mail para contato : " required>
+<div class="formulario">
+            
+            <input  type="text" id="ra" name="name" placeholder="Seu Ra Ex:000123456789xsp" value="000" required  maxlength="12" >
+            <input type="email" id="email" name="email" placeholder="E-mail para contato : " required>
             
         
-            <input type="text" name="subject" placeholder="Assunto:" required>
+            <input type="text" id="Assunto" name="subject" placeholder="Assunto:" required>
             
             
-                <textarea name="message" placeholder="Relate o erro:"required></textarea>
+                <textarea name="message" id="mensagem" placeholder="Relate o erro:"required></textarea>
                
-             <button type="submit">Relatar</button>  
+             <button id="enviar" >Relatar</button>  
                 
-            </form>  
+            
             <a href="../../tela de bem vindo/tela de bem vindo.html">sair</a>
             
         </div>
     </div>
+</div>
+<dialog class="modal" id="modal">
+   
+    
+      <p id="ops">Preencha todos os campos corretamente </p>
+      
+      <button id="okButton" class="okButton"> OK </button>
+  
+    </div>
+
+</dialog>
+<dialog class="modal2" id="modal2">
+   
+    
+    <p id="ops">sua reclamação foi enviada </p>
+    
+    <button id="okButton" class="okButton"> OK </button>
+
+  </div>
+
+</dialog>
 </body>
-<script src="../sup.js/sup.js"></script>
+<script type="module" src="../suporte.js/sup.js"></script>
 </html>
