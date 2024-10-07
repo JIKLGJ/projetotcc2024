@@ -29,6 +29,7 @@ var okButton = document.querySelector('#okButton');
 
 
 
+// Função POST corrigida (continua igual)
 async function POST() {
   const url = "https://urna-ec7a7-default-rtdb.firebaseio.com/alunos.json";
   
@@ -52,38 +53,26 @@ async function POST() {
     const data = await response.json();
     console.log(data);
 
-    // Mude de tela após o envio dos dados
+    // Mudar de tela após o envio dos dados
     window.location.href = "../../tela de bem vindo/tela de bem vindo.html";
   } catch (error) {
     console.error(error);
-    modal.showModal(); // Mostra o modal se ocorrer um erro
+    modal.showModal(); // Mostrar o modal se ocorrer um erro
   }
 }
 
-
- 
-
+// Verificar se os campos estão preenchidos e se as credenciais estão corretas
 botao.addEventListener('click', () => {
-  if (ra.value === '' || senha.value === '' || (ra.length<12 || senha.value != 'Al.2023#'
- 
-  )) {
-    modal.showModal(); // Mostra o modal se algum campo estiver vazio ou as credenciais estiverem incorretas
-
+  if (ra.value === '' || senha.value === '' || ra.value.length < 12 || senha.value !== 'Al.2023#') {
+    modal.showModal(); // Mostrar modal se os campos estiverem vazios ou incorretos
+  } else if (isNaN(ra.value)) {
+    modal.showModal(); // Mostrar modal se o RA não for numérico
+  } else {
+    POST(); // Chamar função POST se os dados estiverem corretos
   }
-  
-
-  
-  else  {
-    POST(); 
-  
-  } 
-  
 });
 
-
-  
-
-
+// Função para mostrar e ocultar a senha
 function mostrarSenha() {
   if (inputPass.type === 'password') {
     inputPass.setAttribute('type', 'text');
@@ -96,10 +85,11 @@ function mostrarSenha() {
   }
 }
 
+// Adicionar eventos ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
   okButton.addEventListener('click', () => {
-    modal.close(); // Fecha o modal
+    modal.close(); // Fechar o modal ao clicar em "OK"
   });
 
-  bntShowpass.addEventListener('click', mostrarSenha); // Adiciona escuta para mostrar/ocultar a senha
+  bntShowpass.addEventListener('click', mostrarSenha); // Adicionar evento para mostrar/ocultar senha
 });
