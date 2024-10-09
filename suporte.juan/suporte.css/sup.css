@@ -101,6 +101,58 @@ color: beige;
 text-decoration: none;
 
 }
+
+#modal2 {
+    border-radius: 20px;
+    border: solid 2px #dbd6d6;
+    width: 15%;
+    height: 10%;
+}
+
+
+.okButton{
+
+  background-color: #573b8a  ;
+  color: #FFFFFF;
+  width: 100px;
+  height: 43px;
+ 
+  border-radius: 50px ;
+  cursor: pointer;
+ transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#ops{
+    margin-left: 70px;
+}
+.okButton:hover{
+  width: 100px;
+  height: 43px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#modal{
+    border-radius: 20px;
+    border: solid 2px #dbd6d6;
+    width: 20%;
+    height: 10%;
+}
+#ops1{
+    margin-left: 50px;
+}
+.okButton2{
+
+    background-color: #573b8a  ;
+    color: #FFFFFF;
+    width: 100px;
+    height: 43px;
+    margin-left: 140px;
+    border-radius: 50px ;
+    cursor: pointer;
+   transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
 @media (min-width:340px) and (max-width:500px){
     
 h2{
