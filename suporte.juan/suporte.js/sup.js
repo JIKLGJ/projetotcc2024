@@ -1,4 +1,3 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 
@@ -15,15 +14,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-
 const ra = document.querySelector("#ra");
 const email = document.querySelector("#email");
 const assunto = document.querySelector("#Assunto");
-const mensagem=document.querySelector("#mensagem")
+const mensagem = document.querySelector("#mensagem");
 const botao = document.querySelector("#enviar");
 var okButton = document.querySelector('#okButton');
 const modal = document.querySelector("#modal");
 const modal2 = document.querySelector("#modal2");
+var okButton2 = document.querySelector('#okButton2');
 
 // Função POST corrigida (continua igual)
 async function POST() {
@@ -33,8 +32,7 @@ async function POST() {
     ra: ra.value,
     email: email.value,
     mensagem: mensagem.value,
-    assunto:assunto.value
-
+    assunto: assunto.value
   };
 
   try {
@@ -46,43 +44,37 @@ async function POST() {
       body: JSON.stringify(newData)
     });
 
-   
     const data = await response.json();
     console.log(data);
-
-    // Mudar de tela após o envio dos dados
-   
   } catch (error) {
     console.error(error);
-   
   }
 }
 
 // Verificar se os campos estão preenchidos e se as credenciais estão corretas
-botao.addEventListener('click',() =>{
-
-  if (ra.value === '' || email.value === '' || assunto.value===''||mensagem.value==='') {
+botao.addEventListener('click', () => {
+  if (ra.value === '' || email.value === '' || assunto.value === '' || mensagem.value === '') {
     modal.showModal(); 
   } else if (isNaN(ra.value)) {
     modal.showModal(); 
-  }
-  else if(ra.value.length < 12){
-
+  } else if (ra.value.length < 9) {
     modal.showModal(); 
-
-  }
-
-  
-  else {
-    modal2.showModal()
+  } else if (!email.validity.valid) {
+    modal.showModal();
+  } else {
+    modal2.showModal();
     POST(); // Chamar função POST se os dados estiverem corretos
   }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
+  // Fechar o primeiro modal
   okButton.addEventListener('click', () => {
     modal.close();
+  });
+
+  // Fechar o segundo modal corretamente
+  okButton2.addEventListener('click', () => {
+    modal2.close(); // Correção: agora fecha o modal2, não o modal
   });
 });
