@@ -31,7 +31,7 @@ textarea{
 }
 
 
- form{ /* nessa parte está ajustando o formulário dentro da caixa  para que o elementos se ajustem bem */
+ .formulario{ /* nessa parte está ajustando o formulário dentro da caixa  para que o elementos se ajustem bem */
     display: flex;
     align-items: start;
     flex-wrap: wrap;
