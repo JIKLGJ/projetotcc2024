@@ -11,25 +11,46 @@
         <div class="card">
             <h2>Suporte</h2>
 
-            <form action=""name="card">
+            <div class="formulario">
 
             
-            <input  type="text" name="name" placeholder="Seu Ra Ex:000123456789xsp" required  maxlength="12" >
-            <input type="email" name="email" placeholder="E-mail para contato : " required>
-            
-        
-            <input type="text" name="subject" placeholder="Assunto:" required>
-            
-            
-                <textarea name="message" placeholder="Relate o erro:"required></textarea>
-               
-             <button type="submit">Relatar</button>  
+                <input  type="text" id="ra" name="name" placeholder="Seu Ra Ex:000123456789xsp"  required  maxlength="12" >
+                <input type="email" id="email" name="email" placeholder="E-mail para contato : " required>
                 
-            </form>  
-            <a href="../tela.de.login/login.htmll/login.html">Sair</a>
             
+                <input type="text" id="Assunto" name="subject" placeholder="Assunto:" required>
+                
+                
+                    <textarea name="message" id="mensagem" placeholder="Relate o erro:"required></textarea>
+                   
+                 <button id="enviar" >Relatar</button>  
+                    
+                
+                <a href="../tela.de.login/login.htmll/login.html">Sair</a>
+                
+            </div>
         </div>
     </div>
-</body>
-<script src="../sup.js/sup.js"></script>
-</html>
+    <dialog class="modal" id="modal">
+       
+        
+          <p id="ops1">Preencha todos os campos corretamente </p>
+          
+          <button id="okButton" class="okButton2"> OK </button>
+      
+        </div>
+    
+    </dialog>
+    <dialog class="modal2" id="modal2">
+       
+        
+        <p id="ops">O erro foi relatado</p>
+        
+        <button id="okButton2" class="okButton"> OK </button>
+    
+      </div>
+    
+    </dialog>
+    </body>
+    <script type="module" src="../suporte.juan/suporte.js/sup.js"></script>
+    </html>

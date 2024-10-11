@@ -11,7 +11,7 @@ const firebaseConfig = {
   appId: "1:153920023241:web:35473099846372372ffb18"
 };
 
-const selectedNumber = document.getElementById('candidato-numero').value;
+
 const confirmar=document.querySelector('#confirmar')
 const btn120=document.querySelector('#btn-120')
 const excluir=document.querySelector('#excluir')
@@ -22,7 +22,7 @@ const db = getDatabase(app);
 
 
 btn120.addEventListener('click',function castVote() {
-    const inputField = document.getElementById('candidato-numero');   
+  const inputField = document.getElementById('candidato-numero');   
     inputField.value = 120;
     console.log("Clicou 120")
   })
@@ -61,35 +61,35 @@ const addItem = async (data) => {
 
 
 confirmar.addEventListener('click', () => {
-    const selectedNumber = document.getElementById('candidato-numero').value;
+  const inputField = document.getElementById('candidato-numero');
 
-   var modal = document.querySelector("dialog");
-   var botal = document.querySelector("dialog button");
-   var modal3 = document.querySelector("#erroConfirmar");
-   var botal3 = document.querySelector("#erroConfirmar button");
+  var modal = document.querySelector("dialog");
+  var botal = document.querySelector("dialog button");
+  var modal3 = document.querySelector("#erroConfirmar");
+  var botal3 = document.querySelector("#erroConfirmar button");
 
-   if (!selectedNumber) {
-    modal3.showModal();
-    botal3.onclick = function() {
-      modal3.close();
+  if (!inputField.value) {
+      modal3.showModal();
+      botal3.onclick = function() {
+          modal3.close();
+      };
+  } else {
+      modal.showModal();
+      botal.onclick = function() {
+          modal.close();
+      };
+
+      addItem({
+          "voto": inputField.value,
+      });
+
       
-
-    };
- } else {
-
-    modal.showModal();
-    botal.onclick = function() {
-      modal.close();}
-    addItem({
-
-        "voto" : "120" ,
-        "voto" : "150" ,
-        "voto" : "200" 
-        
-    });
-
-}
+      confirmar.disabled = true;
+      confirmar.style.backgroundColor = 'gray';
+      confirmar.style.cursor = 'not-allowed';
+  }
 });
+
 excluir.addEventListener('click', () => {
 
     

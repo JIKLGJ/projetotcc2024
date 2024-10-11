@@ -63,7 +63,7 @@ async function POST() {
 
 // Verificar se os campos estão preenchidos e se as credenciais estão corretas
 botao.addEventListener('click', () => {
-  if (ra.value === '' || senha.value === '' || ra.value.length < 12 || senha.value !== 'Al.2023#') {
+  if (ra.value === '' || senha.value === '' || ra.value.length < 9 || senha.value !== 'Al.2023#') {
     modal.showModal(); // Mostrar modal se os campos estiverem vazios ou incorretos
   } else if (isNaN(ra.value)) {
     modal.showModal(); // Mostrar modal se o RA não for numérico
