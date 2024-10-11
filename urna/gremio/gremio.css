@@ -24,18 +24,20 @@ a {
 
 button {
     font-size: 24px;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
     cursor: pointer;
     background-color: rgb(48, 27, 155);
     color: rgb(238, 227, 227);
     transition: background-color 0.3s;
-    margin: 5px;
+    border: none;
+    margin: 2px;
+    border: 1px solid rgb(0, 0, 0);
 }
 button:hover {
 
-    width: 95px;
+    width: 155px;
     font-size: 27px;
     height: 50;
     color: black;
@@ -47,14 +49,14 @@ button:hover {
     color: black;
     font-size: 15px;
     border-radius: 15px;
-    width: 90px;
+    width: 150px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin: 5px;
 }
 .confirm-button:hover {
     background-color: #06b30f;
-    width: 95px;
+    width: 155px;
     font-size: 17px;
     color: white;
 }
@@ -64,54 +66,39 @@ button:hover {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-    width: 80px;
+    width: 150px;
     transition: background-color 0.3s;
     margin: 5px;
 }
 .apagar-button:hover {
     background-color: #ff0000;
-    width: 90px;
+    width: 155px;
     font-size: 17px;
     color: white;
 }
-.limpar-button {
-    background-color: #ffffffe3;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 80px;
-    transition: background-color 0.3s;
-    margin: 5px;
-}
-.limpar-button:hover {
-    background-color: #3a3939;
-    color: rgb(255, 255, 255);
-    width: 90px;
-    font-size: 17px;
-}
+
 .card-fundo {
     margin: 0 auto;
     width: 340px;
-  height: 320px;
+  height: 250px;
     padding: 30px;
     border-radius: 30px;
     background-color: rgba(9, 22, 136, 0.336);
     box-shadow: 8px 8px 35px rgb(2, 0, 3); 
 
 }
-    #largo {
+    .largo {
     font-size: 24px;
     width: 300px;
-    height: 40px;
-    border-radius: 15px;
+    height: 50px;
+    border-radius: 9px;
     cursor: pointer;
     background-color: rgb(48, 27, 155);
     color: rgb(238, 227, 227);
     transition: background-color 0.3s;
-    margin: 5px;
+    margin: 2px;
 }
-#largo:hover {
+.largo:hover {
 
     width: 305px;
     font-size: 27px;
@@ -122,7 +109,7 @@ button:hover {
 }
 #candidato-numero {
     padding: 11px;
-    width: 290px;
+    width: 300px;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
@@ -136,7 +123,7 @@ button:hover {
 
 }
 .botão-especial{
-margin-top: 13px;
+margin-top: 10px;
 
 }
 .botão-padrão{
@@ -144,7 +131,7 @@ margin-top: 13px;
 
 }
 .zero{
-    margin-top: 7px;
+    margin-top: 20px;
 }
 
 
