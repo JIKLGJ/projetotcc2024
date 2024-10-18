@@ -1,75 +1,83 @@
-function castVote(number) {
-    const inputField = document.getElementById('candidato-numero');
-    inputField.value += number;
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+
+// Configuração Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyDbQH9lRIEfYeXGA92QWVIkZ0No6-5xrio",
+  authDomain: "urna-ec7a7.firebaseapp.com",
+  databaseURL: "https://urna-ec7a7-default-rtdb.firebaseio.com",
+  projectId: "urna-ec7a7",
+  storageBucket: "urna-ec7a7.appspot.com",
+  messagingSenderId: "153920023241",
+  appId: "1:153920023241:web:35473099846372372ffb18"
+};
+
+// Inicializar Firebase
+const app = initializeApp(firebaseConfig);
+
+// Seleção dos elementos
+const seriesInput = document.querySelector("#series");
+const raInput = document.querySelector("#ra");
+const digitoInput = document.querySelector("#digito");
+const escolhaInput = document.querySelector("#escolha");
+const botao = document.querySelector("#botao");
+
+var okButton = document.querySelector('#okButton');
+const modal = document.querySelector("#modal");
+const modal2 = document.querySelector("#modal2");
+var okButton2 = document.querySelector('#okButton2');
+// Função POST
+async function POST() {
+  const url = "https://urna-ec7a7-default-rtdb.firebaseio.com/clube.json";
+  
+  const newData = {
+    ra: raInput.value,
+    serie: seriesInput.value,
+    escolha: escolhaInput.value,
+    digito: digitoInput.value
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newData)
+    });
+
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
 }
- function validateFields() {
-    const selectedNumber = document.getElementById('candidato-numero').value;
 
-    var modal=document.querySelector("dialog");
-    var botal=document.querySelector("dialog button");
-    var modal3=document.querySelector("#erroConfirmar")
-    var botal3=document.querySelector("#erroConfirmar button ")
-
-    if (!selectedNumber) {
-
-        modal3.showModal()
-
-        botal3.onclick=function(){
-            modal3.close()
-        }
-} 
-else {
-    modal.showModal()
-
-    botal.onclick=function(){
-        modal.close()
-    }
-
-}
-
-
-}
-function deleteAction() {
-    const inputField = document.getElementById('candidato-numero');
-    const selectedNumber = inputField.value;
-    var modal5=document.querySelector("#modalapagar")
-    var botal5=document.querySelector("#modalapagar button")
-
-    if (!selectedNumber) {
-modal5.showModal()
-botal5.onclick=function(){
-    modal5.close()
-}
-
-    } else {
-        inputField.value = selectedNumber.slice(0, -1);
-
-    }
-}
-
-
-function deleteAll() {
-    const inputField = document.getElementById('candidato-numero');
-    const selectedNumber = inputField.value;
-    var modal4=document.querySelector("#modalexcluir")
-    var botao4=document.querySelector("#modalexcluir button")
-
-    var moda2=document.querySelector("#Excluir");
-    var bota2=document.querySelector("#Excluir button");
-
-    if (!selectedNumber) {
-        modal4.showModal()
-
-        botao4.onclick=function(){
-            modal4.close()
-        }
-    } else {
-        moda2.showModal()
-
-    bota2.onclick=function(){
-        moda2.close()
-    }
-        inputField.value = '';
-
-    }
-}
+// Validação dos dados e envio ao clicar no botão
+botao.addEventListener('click', () => {
+  // Verificação de dados vazios ou incompletos
+  if (raInput.value === '' ||   raInput.value.length < 9 || isNaN(raInput.value)) {
+    // Exibir modal de erro
+    modal.showModal(); 
+    
+  }
+  
+  
+  else {
+    // Exibir modal de sucesso
+    modal2.showModal();
+      POST(); // Chamar a função POST depois de fechar o modal
+    
+  }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    // Fechar o primeiro modal
+    okButton.addEventListener('click', () => {
+      modal.close();
+    });
+  
+    // Fechar o segundo modal corretamente
+    okButton2.addEventListener('click', () => {
+      modal2.close(); // Correção: agora fecha o modal2, não o modal
+    });
+  });
+  
