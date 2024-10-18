@@ -1,113 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./clube.css">
-    <title>Clube</title>
-
-
+    <link rel="stylesheet" href="../clube/clube.css">
+    <title>clube </title>
 </head>
 <body>
-    <div >
-        <h1>Vote em seu Clube</h1>
-    </div>
-    <img class="logo" src="../../images/logo.png" alt="Tutoria">
-    <div class="card-fundo">
+    <div class="container">
+        <div class="card">
+            <h2>Clube</h2>
+            <img class="logo" src="../../images/logo.png" alt="Tutoria">
+            <div class="formulario">
 
-            <div><input type="text" id="candidato-numero" readonly></div>
+            
+                <input  type="text" id="ra" name="ra" placeholder="Digite o RA apenas números"  required  maxlength="12" >
+              
+                <select id="digito"  class="digito" name="digito" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option  value="x" selected="">X</option >
+                
+                </select>
 
-        <div class="botão-padrão">
-            <div>
-                <button onclick="castVote(1)">1</button>
-                <button onclick="castVote(2)">2</button>
-                <button onclick="castVote(3)">3</button>
-            </div>
-            <div>
-                <button onclick="castVote(4)">4</button>
-                <button onclick="castVote(5)">5</button>
-                <button onclick="castVote(6)">6</button>
-            </div>
-            <div>
-                <button onclick="castVote(7)">7</button>
-                <button onclick="castVote(8)">8</button>
-                <button onclick="castVote(9)">9</button>
-            </div>
-            <div class="zero">
-                <button type="button" id="largo" onclick="castVote(0)">0</button>
-            </div>
-        </div>
+                <select id="series"  class="digito" name="digito" >
+                    <option value="3 A">3 A</option>
+                    <option value="3 B">3 B</option>
+    
+                    <option  value="3 C" >3 C</option >
 
-        <div class="botão-especial">
-            <button type="button" class="confirm-button" onclick="validateFields()">Confirmar</button>
-            <dialog>
+                        <option value="2 A">2 A</option>
+                    <option value="2 B">2 B</option>
+    
+                    <option  value="2 C" >2 C</option >
+                        <option value="1 A">1 A</option>
+                    <option value="1 B">1 B</option>
+    
+                    <option  value="1 C" selected="">1 C</option >
+                
+                </select>
 
-                <h2>Seu voto foi confirmado
-
-                </h2>
-
-                <button class="ok">
-                    ok
-                </button>
-
-                </dialog >
-
-                <dialog id=erroConfirmar>
-
-                    <h2>
-                        Por favor, aperte em um número para confirmar
-                    </h2>
-
-                    <button class="ok">
-                        Ok
-
-                </dialog>
-
-            <button type="button" class="apagar-button" onclick="deleteAll()">Excluir</button>
-
-            <dialog id="Excluir">
-
-                <h3>Seu voto foi cancelado
-
-                </h3>
-
-                <button class="ok">
-                    Ok
-                </button>
-
-                </dialog>
-
-                <dialog id="modalexcluir">
-                    <h2>
-                        Por favor, aperte um número para excluir
-                    </h2>
-
-                    <button class="ok">
-                        Ok
-                    </button>
-                </dialog>
-
-            <button type="button" class="limpar-button" onclick="deleteAction()">Apagar</button>
-           <dialog id="modalapagar">
-            <h2>
-                Por favor, aperte um número para apagar.
-            </h2>
-
-            <button class="ok">
-                Ok
-            </button>
-           </dialog>
-
-        </div>
-    </div>
-
-    <div class="links">
-
-       <a href="../../tela de bem vindo/tela de bem vindo.html">Voltar</a>
+                <select id="escolha"  class="digito" name="digito" >
+                    <option value="clube de esporte">clube de esporte</option>
+                    <option value="clube de xadrex">clube de xadrex</option>
+    
+                    <option  value="clube de culinaria" selected="">clube de culinaria</option >
+                
+                </select>
+            
+               
+                   
+                 <button id="botao" >enviar</button>  
+                    
+             
+                 <a href="../../tela de bem vindo/tela de bem vindo.html">Voltar</a>
         <a href="../../suporte.juan/suporte.html/sup.html">Suporte</a>
+            </div>
+        </div>
     </div>
-    <script src="./clube.js"></script>
-
-
-</body>
-</html>
+    <dialog class="modal" id="modal">
+       
+        
+          <p id="ops1">Preencha o ra corretamente </p>
+          
+          <button id="okButton" class="okButton2"> OK </button>
+      
+        </div>
+    
+    </dialog>
+    <dialog class="modal2" id="modal2">
+       
+        
+        <p id="ops"> Escolha confirmada</p>
+        
+        <button id="okButton2" class="okButton"> OK </button>
+    
+      </div>
+    
+    </dialog>
+    </body>
+    <script type="module" src="../clube/clube.js"></script>
+    </html>
