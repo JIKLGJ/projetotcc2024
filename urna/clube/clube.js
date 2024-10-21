@@ -17,7 +17,7 @@ const app = initializeApp(firebaseConfig);
 // Seleção dos elementos
 const seriesInput = document.querySelector("#series");
 const nomeInput = document.querySelector("#nome");
-const digitoInput = document.querySelector("#digito");
+
 const escolhaInput = document.querySelector("#escolha");
 const botao = document.querySelector("#botao");
 
@@ -32,8 +32,8 @@ async function POST() {
   const newData = {
     nome: nomeInput.value,
     serie: seriesInput.value,
-    escolha: escolhaInput.value,
-    digito: digitoInput.value
+    escolha: escolhaInput.value
+    
   };
 
   try {
