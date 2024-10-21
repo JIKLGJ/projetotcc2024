@@ -16,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 
 // Seleção dos elementos
 const seriesInput = document.querySelector("#series");
-const raInput = document.querySelector("#ra");
+const nomeInput = document.querySelector("#nome");
 const digitoInput = document.querySelector("#digito");
 const escolhaInput = document.querySelector("#escolha");
 const botao = document.querySelector("#botao");
@@ -30,7 +30,7 @@ async function POST() {
   const url = "https://urna-ec7a7-default-rtdb.firebaseio.com/clube.json";
   
   const newData = {
-    ra: raInput.value,
+    nome: nomeInput.value,
     serie: seriesInput.value,
     escolha: escolhaInput.value,
     digito: digitoInput.value
@@ -51,11 +51,24 @@ async function POST() {
     console.error(error);
   }
 }
+// Adiciona um ouvinte de evento para o campo de entrada nomeInput
+nomeInput.addEventListener("keypress", function(e) {
+  
+  // Obtém o código da tecla pressionada, usando keyCode ou which dependendo da compatibilidade do navegador
+  const keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+  // Verifica se o código da tecla está entre 48 e 57 (que são os códigos ASCII dos números 0 a 9)
+  if (keyCode > 47 && keyCode < 58) {
+    
+    // Se for um número, impede que o número seja inserido no campo de texto
+    e.preventDefault();
+  }
+});
 
 // Validação dos dados e envio ao clicar no botão
 botao.addEventListener('click', () => {
   // Verificação de dados vazios ou incompletos
-  if (raInput.value === '' ||   raInput.value.length < 9 || isNaN(raInput.value)) {
+  if (nomeInput.value === '' ||   nomeInput.value.length < 9) {
     // Exibir modal de erro
     modal.showModal(); 
     
