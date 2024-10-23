@@ -1,336 +1,244 @@
-body {
-    font-family: Arial, sans-serif;
+body {     
+    font-family: 'Arial', sans-serif;
     text-align: center;
     background: linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,1) 35%, rgba(36,36,62,1) 100%);
-    width: 100%;
-    height: 100%;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    padding: 0px;
-}
-h1{
-    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-a {
-    margin: 40px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
 
-    color:  #ffffff;
-    text-decoration: none;
+.card {
+  
+    border-radius: 8px;
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.8);
+    width: 660px;
+    padding: 40px;
+    margin: 26px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+input, select {
+    
+   width: 100%;
+   height: 40px;
+    border: thin solid #0a0000;
+    padding-left: 16px;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
+    border-radius: 15px;
+    
+}
 
+input:focus, select:focus {
+    border-color: #1dd1f1;
+    outline: none;
+}
 
+.series{
+    width: 103%; 
+    height: 42px; 
+}
+.escolha{
+    width: 103%; 
+    height: 42px;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
 }
 
 button {
-    font-size: 24px;
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #573b8a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    background-color: rgb(48, 27, 155);
-    color: rgb(238, 227, 227);
-    transition: background-color 0.3s;
-    margin: 5px;
+
+    margin: 20px auto;
+    border: none;
+    transition: .2s; 
 }
+
 button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px #98b2be;
+}
 
-    width: 95px;
-    font-size: 27px;
-    height: 50;
-    color: black;
-    background-color: white;
-    transition: background-color 1s;
+h2 {
+    margin-bottom: 20px;
+    color: #fff;
 }
-.confirm-button {
-    background-color: #13ad2d;
-    color: black;
-    font-size: 15px;
-    border-radius: 15px;
-    width: 90px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 5px;
-}
-.confirm-button:hover {
-    background-color: #06b30f;
-    width: 95px;
-    font-size: 17px;
-    color: white;
-}
-.apagar-button {
-    background-color: #d61111fa;
-    color: black;
-    font-size: 16px;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 80px;
-    transition: background-color 0.3s;
-    margin: 5px;
-}
-.apagar-button:hover {
-    background-color: #ff0000;
-    width: 90px;
-    font-size: 17px;
-    color: white;
-}
-.limpar-button {
-    background-color: #ffffffe3;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    border-radius: 15px;
-    cursor: pointer;
-    width: 80px;
-    transition: background-color 0.3s;
-    margin: 5px;
-}
-.limpar-button:hover {
-    background-color: #3a3939;
-    color: rgb(255, 255, 255);
-    width: 90px;
-    font-size: 17px;
-}
-.card-fundo {
-    margin: 0 auto;
-    width: 340px;
-  height: 320px;
-    padding: 30px;
-    border-radius: 30px;
-    background-color: rgba(9, 22, 136, 0.336);
-    box-shadow: 8px 8px 35px rgb(2, 0, 3); 
 
+a {
+   
+    color: #ffffff; /* Cor do texto do link ao passar o mouse */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  display: inline-block; /* Permite aplicar padding e margin */
+  transition: .2s; /* Transição suave para propriedades alteradas */
+  margin: 0 auto;
+    display: block;
+    margin-right: 20px;
+cursor: pointer;
 }
-    #largo {
-    font-size: 24px;
-    width: 300px;
-    height: 40px;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: rgb(48, 27, 155);
-    color: rgb(238, 227, 227);
-    transition: background-color 0.3s;
-    margin: 5px;
-}
-#largo:hover {
-
-    width: 305px;
-    font-size: 27px;
-    height: 50;
-    color: black;
-    background-color: white;
-    transition: background-color 1s;
-}
-#candidato-numero {
-    padding: 11px;
-    width: 290px;
-    border-radius: 10px;
-    text-align: center;
+ ul li {
+    display: inline-block; /* Exibe itens da lista horizontalmente */
+    padding: 0 30px; /* Espaçamento horizontal ao redor dos itens */
+    text-align: center; /* Alinhamento centralizado do texto nos itens da lista */
     font-size: 20px;
-    background-color: rgb(253, 253, 253);
+  }
 
+
+  
+  /* Estilo para links no cabeçalho ao passar o mouse sobre eles */
+   a:hover {
+    color: #1dd1f1; /* Cor do texto dos links */
+    transform: scale(1.05); /* Aumenta o tamanho do link levemente */
+  }
+  
+  /* Estilo para listas de navegação dentro do cabeçalho */
+ ul {
+    list-style-type: none; /* Remove os marcadores das listas */
+  }
+.okButton, .okButton2 {
+    background-color: #573b8a;
+    color: #FFFFFF;
+    width: 115px;
+   height: 53px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: box-shadow 0.4s;
 }
-.logo{
-    max-width: 300px;
 
-    margin: 0 auto;
-
-}
-.botão-especial{
-margin-top: 13px;
-
-}
-.botão-padrão{
-    margin-top: 9px;
-
-}
-.zero{
-    margin-top: 7px;
+.okButton:hover, .okButton2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-.links{
-
-    margin-top: 13px;
-}
-dialog::backdrop{
-    background-color: rgb(7, 7, 85);
-    opacity: 0.5;
-}
-dialog{
-
-    width: 30%;
-    height: 25%;
+#modal, #modal2 {
     border-radius: 20px;
-
+    border: solid 2px #dbd6d6;
+    padding: 20px;
+    width: 60%;
 }
-.ok{
-    background-color: rgb(54, 42, 231);
-    color: rgb(246, 242, 247);
-   width: 65px;
-   height: 50px;
-   margin: 10px;
-   border-radius: 10px;
-border: none;
-}
-.ok:hover{
-    background-color: #13ad2d;
-    width: 68px;
-    height: 53px;
-transition: 1s;
-
-}
-#Excluir::backdrop{
-    background-color: rgb(7, 7, 85);
-    opacity: 0.5;
+ .modal {
+    border-radius: 20px;
+ border: solid 2px #dbd6d6;
 }
 
+.metade{
+ 
+  height: 260px;
+  
+  border-radius: 1px ;
+}
+.circulo{
+  
+  width: 115px;
+  height: 115px;
+  border: solid 10px #D82A2A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  align-items: center;
+}
+.circulo2{
+  
+    width: 115px;
+    height: 115px;
+    border: solid 10px #0bb962;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    align-items: center;
+  }
+#cima{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.x{
+  
+  height: 60px;
+
+}
+#baixo{
+
+  height:270px;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  flex-direction: column;
+}
+
+#ops{
+  
+  color: #353030;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+
+}
 
 
-@media (min-width:340px) and (max-width:500px){
-
-    .botãopadrão{
-        margin-left: 100px;
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px;
     }
-    h1{
-    margin-left: 10px;    
+
+    h2 {
+        font-size: 20px;
     }
-    h2{
-        font-size: 15px;    
-        }
-        h3{
 
-            font-size: 18px;       
-        }
-    img{
-     width: 220px; 
-     margin-right: 88px;
-
-    }
-    .card-fundo{
-
-    width: 250px;
-  height: 300px;
-    padding: 30px;
-    border-radius: 30px;
-
-
-    }
     button {
-        font-size: 24px;
-        width: 70px;
-        height: 40px;
-        border-radius: 10px;
-        cursor: pointer;
-
-        margin: 5px;
+        width: 150px;
     }
-    button:hover {
 
-        width: 71px;
-        font-size: 27px;
-        height: 45;
-
-        transition: background-color 1s;
+    input, select {
+        font-size: 14px;
     }
-    #largo {
-        font-size: 24px;
-        width: 230px;
-        height: 45px;
-        border-radius: 15px;
-
-        margin: 1px;
-    }
-    #largo:hover {
-
-        width: 232px;
-        font-size: 27px;
-        height: 47px;
-
-    }
-    #candidato-numero {
-      width: 215px;
-
-    }
-    .confirm-button {
-        width: 67px;
-        height: 40px;
-        font-size: 11px;
-
-
-
-
 }
-.botão-especial{
-    margin-top: 2px;
 
+@media (max-width: 500px) {
+    .formulario {
+        gap: 12px;
     }
-.apagar-button {
 
-
-    font-size: 13px;
-
-
-    width: 65px;
-    height: 40px;
-}
-.limpar-button {
-
-    font-size: 13px;
-    border-radius: 15px;
-
-    width: 62px;
-    height: 40px;
-
-}
-.confirm-button:hover{
-
-    width: 69px;
-    font-size: 13px;
-
-}
-.apagar-button:hover {
-
-    width: 67px;
-    font-size: 14px;
-
-}
-    .limpar-button:hover {
-
-        width:64px;
+    input, select {
         font-size: 14px;
     }
 
-
-
-
-dialog{
-
-    width: 50%;
-    height: 25%;
-    border-radius: 10px;
-
-}
-.ok{
-    background-color: rgb(54, 42, 231);
-    color: rgb(246, 242, 247);
-   width: 65px;
-   height: 50px;
-   margin: 0 auto;
-   border-radius: 10px;
-border: none;
-}
-.ok:hover{
-    background-color: #13ad2d;
-    width: 68px;
-    height: 53px;
-transition: 1s;
-
-}
-#Excluir::backdrop{
-    background-color: rgb(7, 7, 85);
-    opacity: 0.5;
-}
-
+    button {
+        width: 140px;
+    }
 }
