@@ -22,41 +22,52 @@
                     
         <input type="text" id="number1" placeholder="Digite o RA apenas números" maxlength="12">
 
-                <select id="digito"  class="digito" >
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option  value="x" selected="">X</option >
-                
-                </select> 
-    </div>
+        <select id="digito"  class="digito" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option  value="x" selected="">X</option >
+        
+        </select>
+</div>
 
+<div class="senha">
 
+    <input type="password" id="senha" name="senha" placeholder="Senha"> 
+    <i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i>
 
-    
-
-    <div class="senha">
-      
-            <input type="password" id="senha" name="senha" placeholder="Senha"> 
-            <i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i>
-
-        </div>
+</div>
+              <dialog class="modal" id="modal">
+                    <div class="metade" id="cima">
+                      <div class="circulo">
+                       <img class="x" src="https://freepngtransparent.com/wp-content/uploads/2023/03/X-Png-109.png" alt="">
+                        
+                      </div>
+                  
+                    </div>
+                    <div class="metade" id="baixo">
+                      <p id="ops">Preencha todos os campos corretamente </p>
+                      <p id="mensagem" >Seu RA ou sua Senha estão incorretos</p>
+                      <button id="okButton" class="okButton"> OK </button>
+                  
+                    </div>
+  
+              </dialog>
                
-             <button id="enviar" >Cadastrar</button>  
+             <button id="botao" >Cadastrar</button>  
                 
             
              <ul>   
-                <li><a href="../../tela de bem vindo/tela de bem vindo.html">Voltar</a>
+                <li><a href="../tela.de.login/login.htmll/login.html">Voltar</a>
                 
                 </li>
                 <li>
-                 <a href="../../suporte.juan/suporte.html/sup.html">Suporte</a>
+                 <a href="../suporte-cadastro/suporte.html">Suporte</a>
                 </li> 
               </ul>
             
@@ -76,7 +87,7 @@
 <dialog class="modal2" id="modal2">
    
     
-    <p id="ops">O erro foi relatado</p>
+    <p id="ops">cadastro confirmado</p>
     
     <button id="okButton2" class="okButton"> OK </button>
 
@@ -84,6 +95,6 @@
 
 </dialog>
 
-<script src="../cadastro/cadastro.js"></script>
+<script type="module" src="../cadastro/cadastro.js"></script>
 </body>
 </html>
