@@ -20,7 +20,7 @@ const app = initializeApp(firebaseConfig);
 const ra = document.querySelector("#number1");
 const senha = document.querySelector("#senha");
 const digito = document.querySelector("#digito");
-
+const modal2 = document.querySelector("#modal2");
 const botao = document.querySelector("#botao");
 const modal = document.querySelector("#modal");
 var inputPass = document.getElementById('senha');
@@ -70,6 +70,7 @@ botao.addEventListener('click', () => {
   } else if (isNaN(ra.value)) {
     modal.showModal(); // Mostrar modal se o RA não for numérico
   } else {
+    modal2.showModal();
     POST(); // Chamar função POST se os dados estiverem corretos
   }
 });
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   okButton.addEventListener('click', () => {
     modal.close(); // Fechar o modal ao clicar em "OK"
   });
-
+ 
+  
   bntShowpass.addEventListener('click', mostrarSenha); // Adicionar evento para mostrar/ocultar senha
 });
