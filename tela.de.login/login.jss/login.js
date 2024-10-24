@@ -1,6 +1,5 @@
-
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
-import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDbQH9lRIEfYeXGA92QWVIkZ0No6-5xrio",
@@ -14,6 +13,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
 
 const ra = document.querySelector("#number1");
 const senha = document.querySelector("#senha");
@@ -25,50 +25,47 @@ var inputPass = document.getElementById('senha');
 var bntShowpass = document.querySelector('#bnt-senha');
 var okButton = document.querySelector('#okButton');
 
-
-
-
-
-// Função POST corrigida (continua igual)
-async function POST() {
-  const url = "https://urna-ec7a7-default-rtdb.firebaseio.com/alunos.json";
-  
-  const newData = {
-    ra: ra.value,
-    senha: senha.value,
-    digito: digito.value
-  };
-
+// Função para obter o item por RA
+const getItemByRa = async (raValue) => {
+  const itemsRef = ref(db, 'cadastro'); // Refere-se à coleção 'cadastro'
   try {
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(newData)
-    });
+      const snapshot = await get(itemsRef);
+      if (snapshot.exists()) {
+          const items = snapshot.val();
+          let foundItem = null;
 
-    if (!response.ok) throw new Error('Erro ao enviar os dados');
+          // Percorre os itens para encontrar pelo RA
+          Object.keys(items).forEach((key) => {
+              if (items[key].ra === raValue) {
+                  foundItem = { key, ...items[key] };
+              }
+          });
 
-    const data = await response.json();
-    console.log(data);
-
-    // Mudar de tela após o envio dos dados
-    window.location.href = "../../tela de bem vindo/tela de bem vindo.html";
+          return foundItem; // Retorna o item encontrado ou null se não encontrar
+      } else {
+          return null; // Caso não encontre nada
+      }
   } catch (error) {
-    console.error(error);
-    modal.showModal(); // Mostrar o modal se ocorrer um erro
+      console.error('Erro ao obter documentos: ', error);
+      return null;
   }
-}
+};
 
 // Verificar se os campos estão preenchidos e se as credenciais estão corretas
-botao.addEventListener('click', () => {
-  if (ra.value === '' || senha.value === '' || ra.value.length < 9 || senha.value !== 'Al.2023#') {
+botao.addEventListener('click', async function () {
+  if (ra.value === '' || senha.value === '' || ra.value.length < 9) {
     modal.showModal(); // Mostrar modal se os campos estiverem vazios ou incorretos
   } else if (isNaN(ra.value)) {
     modal.showModal(); // Mostrar modal se o RA não for numérico
   } else {
-    POST(); // Chamar função POST se os dados estiverem corretos
+    const foundItem = await getItemByRa(ra.value);
+    if (foundItem && foundItem.senha === senha.value && foundItem.digito===digito.value) {
+      // Credenciais corretas, redirecionar para outra página
+      window.location.href = "../../tela de bem vindo/tela de bem vindo.html";
+    } else {
+      // Senha ou RA incorretos, mostrar modal de erro
+      modal.showModal();
+    }
   }
 });
 
