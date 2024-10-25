@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">  
     <link rel="stylesheet" href="../senha/sen.css">
     <title>Senha</title>
     
 </head>
 <body>
    
-    <h1>Coloque seu RA para receber a senha</h1>
+    <h1>Reescreva sua senha</h1>
     
     <img class="logo" src="../images/logo.png" alt="Imagem">
    
     <div class="card-senha">
        
-            <div >
-            <input type="text" name="ra" id="ra" placeholder="Digite o RA apenas números" maxlength="12" >
-        
+        <div class="RA" >
+                    
+            <input type="text" id="number1" placeholder="Digite o RA apenas números" maxlength="12">
+    
             <select id="digito"  class="digito" >
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -30,10 +32,15 @@
                 <option  value="x" selected="">X</option >
             
             </select>
-        </div>
-           
-        <div> <button type="button" onclick="validateAndRedirect()">Acesse a senha</button>
-           
+    </div>
+    
+    <div class="senha">
+    
+        <input type="password" id="senha" name="senha" placeholder="insira uma"> 
+        <i class="bi bi-eye-fill" id="bnt-senha" onclick="mostrarSenha()"></i>
+    
+    </div>
+    <button id="botao">Mudar sua senha</button>
 <dialog>
 <h2>sua senha é:
 
@@ -50,7 +57,7 @@
 
 <dialog id="erro">
     <h2>
-        Por favor, insira um RA válido
+        Por favor, uma senha valida de no minimo 6 digitos
     </h2>
     
     <button class="ok">
