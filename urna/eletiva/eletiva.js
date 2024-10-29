@@ -79,7 +79,9 @@ botao.addEventListener('click', () => {
     // Exibir modal de sucesso
     modal2.showModal();
       POST(); // Chamar a função POST depois de fechar o modal
-    
+      botao.disabled = true;
+      botao.style.backgroundColor = 'gray';
+      botao.style.cursor = 'not-allowed';
   }
 });
 document.addEventListener('DOMContentLoaded', () => {
