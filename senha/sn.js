@@ -1,23 +1,29 @@
+
+
 const ra = document.querySelector("#number1");
 const senha = document.querySelector("#senha");
-const modal2 = document.querySelector("#modal2");
+const digito = document.querySelector("#digito");
+
 const botao = document.querySelector("#botao");
 const modal = document.querySelector("#modal");
+const modal2 = document.querySelector("#modal2");
 var inputPass = document.getElementById('senha');
 var bntShowpass = document.querySelector('#bnt-senha');
-var okButton = document.querySelector('#okButton'); // Remover a duplicação
-var okButton2 = document.querySelector('#okButton2'); // Corrigir para outra variável
+var okButton = document.querySelector('#okButton');
+var okButton2 = document.querySelector('#okButton2');
 
-// Verificar se os campos estão preenchidos e se as credenciais estão corretas
-botao.addEventListener('click', () => {
-  if (ra.value === '' || senha.value === '' || ra.value.length < 9 || senha.value.length < 6) {
-    modal.showModal(); // Mostrar modal se os campos estiverem vazios ou incorretos
+botao.addEventListener("click", async () => {
+  if (ra.value === '' || senha.value === '' || ra.value.length < 9 || senha.value.length < 6 ) {
+    modal.showModal(); // Show modal if fields are empty or incorrect
   } else if (isNaN(ra.value)) {
-    modal.showModal(); // Mostrar modal se o RA não for numérico
+    modal.showModal(); // Show modal if RA is not numeric
   } else {
-    modal2.showModal(); // Mostrar segundo modal se tudo estiver correto
-  }
-});
+   
+          modal2.showModal();
+        }
+      });
+
+     
 
 function mostrarSenha() {
   if (inputPass.type === 'password') {
@@ -31,14 +37,12 @@ function mostrarSenha() {
   }
 }
 
-// Adicionar eventos ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
   okButton.addEventListener('click', () => {
-    modal.close(); // Fechar o modal ao clicar em "OK"
+    modal.close();
   });
+
   okButton2.addEventListener('click', () => {
-    modal2.close(); // Fechar o modal ao clicar em "OK"
+    modal2.close();
   });
-  
-  bntShowpass.addEventListener('click', mostrarSenha); // Adicionar evento para mostrar/ocultar senha
 });
