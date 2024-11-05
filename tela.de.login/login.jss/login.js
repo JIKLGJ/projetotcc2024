@@ -61,7 +61,7 @@ botao.addEventListener('click', async function () {
     const foundItem = await getItemByRa(ra.value);
     if (foundItem && foundItem.senha === senha.value && foundItem.digito===digito.value) {
       // Credenciais corretas, redirecionar para outra página
-      window.location.href = "../../tela de bem vindo/tela de bem vindo.html";
+      window.location.href = "./tela de bem vindo.html";
     } else {
       // Senha ou RA incorretos, mostrar modal de erro
       modal.showModal();

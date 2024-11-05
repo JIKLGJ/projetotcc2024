@@ -56,7 +56,7 @@ async function POST() {
     console.log(data);
 
     // Mudar de tela após o envio dos dados
-    window.location.href = "../tela.de.login/login.htmll/login.html";
+    window.location.href = "./index.html";
   } catch (error) {
     console.error(error);
     modal.showModal(); // Mostrar o modal se ocorrer um erro
