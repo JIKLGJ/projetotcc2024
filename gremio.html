@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./projetotcc2024/urna/gremio/gremio.css">
+    <title>Grêmio</title>
+
+
+</head>
+<body>
+    <div >
+        <h1>Vote em sua chapa</h1>
+    </div>
+    <img class="logo" src="./projetotcc2024/images/logo.png" alt="Tutoria">
+    <div class="card-fundo">
+
+            <div>
+                
+                <input type="text" id="candidato-numero" readonly></div>
+
+        <div class="botão-padrão">
+            <div>
+                <button  id="btn-120">120</button>
+                <button id="btn200">200</button>
+               
+            </div>
+            
+            <div class="zero">
+                <button type="button" id="btn150" class="largo" >150</button>
+            </div>
+        </div>
+
+        <div class="botão-especial">
+            <button type="button" id="confirmar" class="confirm-button" >Confirmar</button>
+            <dialog>
+
+                <h2>Seu voto foi confirmado
+                </h2>
+
+                <button class="ok">
+                    
+                    Ok
+                </button>
+
+                </dialog >
+
+                <dialog id=erroConfirmar>
+
+                    <h2>
+                        Por favor, aperte em um número para confirmar
+                    </h2>
+
+                    <button class="ok">
+                        Ok
+
+                </dialog>
+
+            <button type="button" class="apagar-button" id="excluir">Excluir</button>
+
+            <dialog id="Excluir">
+
+                <h3>Seu voto foi cancelado
+
+                </h3>
+
+                <button class="ok">
+                    Ok
+                </button>
+
+                </dialog>
+
+                <dialog id="modalexcluir">
+                    <h2>
+                        Por favor, aperte um número para excluir
+                    </h2>
+
+                    <button class="ok">
+                        Ok
+                    </button>
+                </dialog>
+
+
+        </div>
+    </div>
+
+    <div class="links">
+
+        <a href="./tela de bem vindo.html">Voltar</a>
+        <a href="./sup.html">Suporte</a>
+    </div>
+    <script type="module" src="./projetotcc2024/urna/gremio/gremio.js"></script>
+
+
+</body>
+</html>
