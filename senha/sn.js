@@ -36,14 +36,20 @@ botao.addEventListener("click", async () => {
     modal.showModal(); // Mostra o modal se o RA não for numérico
   } else {
     // Chama a função para atualizar a senha
-    await updateItemByRa(ra.value, { senha: senha.value });
-    modal2.showModal(); // Mostra o modal de sucesso
+    const result = await updateItemByRa(ra.value, { senha: senha.value });
+
+    if (result.success) {
+      modal2.showModal(); // Mostra o modal de sucesso, se a atualização for bem-sucedida
+    } else {
+      modal.showModal(); // Caso ocorra um erro, exibe o modal de erro
+    }
   }
 });
 
 // Função para atualizar o item pelo RA
 const updateItemByRa = async (ra, data) => {
   const itemsRef = ref(db, 'cadastro'); // Referência à coleção 'cadastro'
+  
   try {
     const snapshot = await get(itemsRef); // Obtém todos os itens da coleção
     let foundDoc = null;
@@ -60,11 +66,14 @@ const updateItemByRa = async (ra, data) => {
       // Atualiza o documento encontrado com os novos dados
       await update(ref(db, `cadastro/${foundDoc.key}`), data);
       console.log('Documento atualizado com sucesso!');
+      return { success: true }; // Retorna sucesso se a atualização for bem-sucedida
     } else {
       console.log('Nenhum documento encontrado com o RA:', ra);
+      return { success: false }; // Retorna erro se o RA não for encontrado
     }
   } catch (error) {
     console.error('Erro ao atualizar documento: ', error);
+    return { success: false }; // Retorna erro se ocorrer algum erro na requisição
   }
 };
 
