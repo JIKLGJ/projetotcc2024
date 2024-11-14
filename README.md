@@ -34,12 +34,12 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 <h1 > Autores do projeto  </h1>
 
-# :hammer: Funcionalidades do projeto
 
 <h1 > link para acesso ao site </h1>
  https://jiklgj.github.io/projetotcc2024/
 
- <h1>Funcionalidades</h1>
+# :hammer: Funcionalidades do projeto
+
  O site pode ser acessado de qualquer dispositivo com conexão à internet, oferecendo praticidade para o usuário navegar de onde estiver. o wab app garante que todos os serviços e conteúdos estejam disponíveis a qualquer momento, proporcionando uma experiência prática, seja em um computador ou smartphone.
 
 - `Funcionalidade 1`: descrição da funcionalidade 1
@@ -61,6 +61,7 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Luiz%20Oliveira-blue?logo=linkedin)](https://www.linkedin.com/in/luizoliveiradev/)
-[![meu projeto](https://img.shields.io/badge/)](https://jiklgj.github.io/projetotcc2024//)
+[![meu projeto](https://github.com/user-attachments/assets/94170c5d-c963-4682-ba4d-ef82c9a9f5ec/)](https://jiklgj.github.io/projetotcc2024//)
 [![GitHub](https://img.shields.io/badge/GitHub-LuizOliveira-black?logo=github)](https://github.com/OutroLuizdev/OutroLuizdev)
