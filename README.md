@@ -62,5 +62,5 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Luiz%20Oliveira-blue?logo=linkedin)](https://www.linkedin.com/in/luizoliveiradev/)
+[![meu projeto](https://img.shields.io/badge/)](https://jiklgj.github.io/projetotcc2024//)
 [![GitHub](https://img.shields.io/badge/GitHub-LuizOliveira-black?logo=github)](https://github.com/OutroLuizdev/OutroLuizdev)
