@@ -33,9 +33,10 @@ O site pode ser acessado de qualquer dispositivo com conexão à internet, ofere
 
 <h1 > Autores do projeto  </h1>
 
-
-
 # :hammer: Funcionalidades do projeto
+
+<h1 > link para acesso ao site </h1>
+
 
 - `Funcionalidade 1`: descrição da funcionalidade 1
 - `Funcionalidade 2`: descrição da funcionalidade 2
