@@ -7,8 +7,7 @@ Utilizamos tecnologias como HTML, CSS, JavaScript e um banco de dados NoSQL para
 Temos como propósito que o web app não apenas aumente a participação nas votações, mas também melhore a organização e a transparência do processo.  A página de Suporte aplicada aos usuários indicou um acolhimento positivo e sugestões para futuras melhorias.
 Concluímos que a implementação de tecnologias digitais no ambiente escolar pode aprimorar a participação democrática, promover a inclusão e facilitar a gestão de processos eleitorais.
 
-<h1 > Funcionalidades </h1>
-O site pode ser acessado de qualquer dispositivo com conexão à internet, oferecendo praticidade para o usuário navegar de onde estiver. o wab app garante que todos os serviços e conteúdos estejam disponíveis a qualquer momento, proporcionando uma experiência prática, seja em um computador ou smartphone.
+
 <h1 > Porcentagem das Tecnologias usadas </h1>
 
 <table>
@@ -24,9 +23,9 @@ O site pode ser acessado de qualquer dispositivo com conexão à internet, ofere
   <td>26.5%</td>
 </tr>
 
-  
 </table>
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white) 
 <h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns arquivos" </h1>
 
 <h1 > Como os usuários podem utilizá-lo </h1>
@@ -36,18 +35,17 @@ O site pode ser acessado de qualquer dispositivo com conexão à internet, ofere
 # :hammer: Funcionalidades do projeto
 
 <h1 > link para acesso ao site </h1>
+ https://jiklgj.github.io/projetotcc2024/
 
+ <h1>Funcionalidades</h1>
+ O site pode ser acessado de qualquer dispositivo com conexão à internet, oferecendo praticidade para o usuário navegar de onde estiver. o wab app garante que todos os serviços e conteúdos estejam disponíveis a qualquer momento, proporcionando uma experiência prática, seja em um computador ou smartphone.
 
 - `Funcionalidade 1`: descrição da funcionalidade 1
 - `Funcionalidade 2`: descrição da funcionalidade 2
 - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
 - `Funcionalidade 3`: descrição da funcionalidade 3
 
-## Tecnologias que eu uso
 
-![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white)  ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
-- 
 
 
 ---
