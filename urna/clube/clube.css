@@ -143,9 +143,10 @@ cursor: pointer;
     border-radius: 20px;
     border: solid 2px #dbd6d6;
     padding: 20px;
-    width: 60%;
+  width: 500px;
 }
  .modal {
+   
     border-radius: 20px;
  border: solid 2px #dbd6d6;
 }

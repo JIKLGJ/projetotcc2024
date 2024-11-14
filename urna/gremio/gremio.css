@@ -153,18 +153,20 @@ dialog{
 }
 .ok{
     background-color: rgb(54, 42, 231);
-    color: rgb(246, 242, 247);
-   width: 65px;
-   height: 50px;
+    color: rgb(255, 255, 255);
+    width: 75px;
+    height: 53px;
    margin: 10px;
-   border-radius: 10px;
-border: none;
+   border-radius: 25px;
+   margin-top: 105px;
+
 }
 .ok:hover{
-    background-color: #13ad2d;
-    width: 68px;
+    width: 75px;
     height: 53px;
-transition: 1s;
+    background-color: rgb(54, 42, 231);
+  border: none;
+
 
 }
 #Excluir::backdrop{
