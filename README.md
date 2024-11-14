@@ -10,7 +10,24 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 <h1 > Funcionalidades </h1>
 
 <h1 > Tecnologias usadas </h1>
-<table><table>
+
+<table>
+<tr>
+  <td>Css</td>
+  <td>java</td>
+  <td>java script</td>
+  <td>Html</td>
+</tr>
+  
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+  
+</table>
 
 <h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns arquivos" </h1>
 
