@@ -8,22 +8,20 @@ Temos como propósito que o web app não apenas aumente a participação nas vot
 Concluímos que a implementação de tecnologias digitais no ambiente escolar pode aprimorar a participação democrática, promover a inclusão e facilitar a gestão de processos eleitorais.
 
 <h1 > Funcionalidades </h1>
-
-<h1 > Tecnologias usadas </h1>
+O site pode ser acessado de qualquer dispositivo com conexão à internet, oferecendo praticidade para o usuário navegar de onde estiver. o wab app garante que todos os serviços e conteúdos estejam disponíveis a qualquer momento, proporcionando uma experiência prática, seja em um computador ou smartphone.
+<h1 > Porcentagem das Tecnologias usadas </h1>
 
 <table>
 <tr>
   <td>Css</td>
-  <td>java</td>
   <td>java script</td>
   <td>Html</td>
 </tr>
   
 <tr>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
+  <td>44.6%</td>
+  <td>28.9%</td>
+  <td>26.5%</td>
 </tr>
 
   
