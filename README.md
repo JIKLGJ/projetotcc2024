@@ -25,10 +25,12 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 </table>
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white) 
-<h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns arquivos" </h1>
+ ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)     ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)
 
-<h1 > Como os usuários podem utilizá-lo </h1>
+
+
+        
+<h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns arquivos" </h1>
 
 <h1 > Autores do projeto  </h1>
 
@@ -48,8 +50,8 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 
----
-## Ferramentas que eu uso
+
+## Ferramentas que utilizamos
 ![IntelliJ](https://img.icons8.com/color/48/000000/intellij-idea.png) 
 ![VS Code](https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png) 
 ![Excel](https://img.icons8.com/fluency/48/000000/microsoft-excel-2019.png) 
