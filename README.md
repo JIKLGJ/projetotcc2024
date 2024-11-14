@@ -42,3 +42,25 @@ O site pode ser acessado de qualquer dispositivo com conexão à internet, ofere
 - `Funcionalidade 2`: descrição da funcionalidade 2
 - `Funcionalidade 2a`: descrição da funcionalidade 2a relacionada à funcionalidade 2
 - `Funcionalidade 3`: descrição da funcionalidade 3
+
+## Tecnologias que eu uso
+
+![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)  ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white)  ![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
+- 
+
+
+---
+## Ferramentas que eu uso
+![IntelliJ](https://img.icons8.com/color/48/000000/intellij-idea.png) 
+![VS Code](https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png) 
+![Excel](https://img.icons8.com/fluency/48/000000/microsoft-excel-2019.png) 
+![Notion](https://img.icons8.com/color/48/000000/notion.png) 
+![Trello](https://img.icons8.com/color/48/000000/trello.png) 
+![Postman](https://img.icons8.com/dusk/48/000000/postman-api.png)
+
+
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Luiz%20Oliveira-blue?logo=linkedin)](https://www.linkedin.com/in/luizoliveiradev/)
+[![GitHub](https://img.shields.io/badge/GitHub-LuizOliveira-black?logo=github)](https://github.com/OutroLuizdev/OutroLuizdev)
