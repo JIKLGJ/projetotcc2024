@@ -35,8 +35,7 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 <h1 > Autores do projeto  </h1>
 
 
-<h1 > link para acesso ao site </h1>
- https://jiklgj.github.io/projetotcc2024/
+
 
 # :hammer: Funcionalidades do projeto
 
@@ -52,17 +51,12 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 ## Ferramentas que utilizamos
-![IntelliJ](https://img.icons8.com/color/48/000000/intellij-idea.png) 
+
 ![VS Code](https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png) 
-![Excel](https://img.icons8.com/fluency/48/000000/microsoft-excel-2019.png) 
+![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![Notion](https://img.icons8.com/color/48/000000/notion.png) 
-![Trello](https://img.icons8.com/color/48/000000/trello.png) 
-![Postman](https://img.icons8.com/dusk/48/000000/postman-api.png)
 
 
+### clique aqui para acessar nosso projeto
+[![meu projeto](https://github.com/user-attachments/assets/0cb65ada-986c-46a4-a336-20bf7201d957/)](https://jiklgj.github.io/projetotcc2024//)
 
-
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Luiz%20Oliveira-blue?logo=linkedin)](https://www.linkedin.com/in/luizoliveiradev/)
-[![meu projeto](https://github.com/user-attachments/assets/35228411-da36-4cd6-b1d8-1f2b5542063b/)](https://jiklgj.github.io/projetotcc2024//)
-[![GitHub](https://img.shields.io/badge/GitHub-LuizOliveira-black?logo=github)](https://github.com/OutroLuizdev/OutroLuizdev)
