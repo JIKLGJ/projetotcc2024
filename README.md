@@ -30,7 +30,7 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
         
-<h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns arquivos" </h1>
+<h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns  arquivos" </h1>
 
 <h1 > Autores do projeto  </h1>
 
