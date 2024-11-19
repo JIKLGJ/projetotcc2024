@@ -58,5 +58,5 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 ### clique aqui para acessar nosso projeto
-[![meu projeto](https://github.com/user-attachments/assets/0cb65ada-986c-46a4-a336-20bf7201d957/)](https://jiklgj.github.io/projetotcc2024//)
+[![meu projeto](https://github.com/user-attachments/assets/0cb65ada-986c-46a4-a336-20bf7201d957/)](https://jiklgj.github.io/projetotcc2024//) 
 
