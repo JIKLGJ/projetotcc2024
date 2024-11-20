@@ -31,6 +31,8 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
         
 <h1 > estruturas de pasta  "como esta orgizado as pastas dentro do vs e colocar alguns  arquivos" </h1>
+As pastas do projeto estão organizadas de forma que todos os arquivos HTML estão dentro de uma pasta chamada html, os arquivos JavaScript estão na pasta js, e os arquivos CSS estão na pasta css.
+Essa organização pode ser melhorada para facilitar a manutenção e escalabilidade, separando os arquivos não apenas por tipo, e uma pasta separada só para imagens 
 
 <h1 > Autores do projeto  </h1>
 
@@ -53,8 +55,11 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 ## Ferramentas que utilizamos
 
 ![VS Code](https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png) 
-![Firebase](https://img.shields.io/badge/Firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
-![Notion](https://img.icons8.com/color/48/000000/notion.png) 
+![Bubble.io](https://img.shields.io/badge/Built_with-Bubble.io-blue?logo=bubble)  
+![Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)  
+
+
+
 
 
 ### clique aqui para acessar nosso projeto
