@@ -35,6 +35,12 @@ As pastas do projeto estão organizadas de forma que todos os arquivos HTML est�
 Essa organização pode ser melhorada para facilitar a manutenção e escalabilidade, separando os arquivos não apenas por tipo, e uma pasta separada só para imagens 
 
 <h1 > Autores do projeto  </h1>
+<br>- Giovana Beloni de Lucena<br> 
+<br>- Juan Aparecido Ramos<br>  
+<br>- Juan Pablo de Paula<br> 
+<br>- Isaque Gomes Coan<br> 
+<br>- Kauã Henrique Pires<br>
+<br>- Lucas de Castro<br> 
 
 
 
@@ -55,7 +61,7 @@ Essa organização pode ser melhorada para facilitar a manutenção e escalabili
 ## Ferramentas que utilizamos
 
 ![VS Code](https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png) 
-![Bubble.io](https://img.shields.io/badge/Built_with-Bubble.io-blue?logo=bubble)  
+ ![Bubble.io](https://img.shields.io/badge/Built_with-Bubble.io-blue?logo=bubble)  
 ![Firebase](https://img.shields.io/badge/Backend-Firebase-orange?logo=firebase)  
 
 
