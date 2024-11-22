@@ -11,117 +11,115 @@ const firebaseConfig = {
   appId: "1:153920023241:web:35473099846372372ffb18"
 };
 
-
-const confirmar=document.querySelector('#confirmar')
-const btn120=document.querySelector('#btn-120')
-const excluir=document.querySelector('#excluir')
-
+// Inicializando Firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+// Selecionando elementos da página
+const confirmar = document.querySelector('#confirmar');
+const excluir = document.querySelector('#excluir');
+const inputField = document.getElementById('candidato-numero');
+const btn120 = document.querySelector('#btn-120');
+const btn200 = document.querySelector('#btn200');
+const btn150 = document.querySelector('#btn150');
 
-
-btn120.addEventListener('click',function castVote() {
-  const inputField = document.getElementById('candidato-numero');   
-    inputField.value = 120;
-    console.log("Clicou 120")
-  })
-
-  btn200.addEventListener('click',function castVote() {
-    const inputField = document.getElementById('candidato-numero');   
-    inputField.value = 200;
-    console.log("Clicou 200")
-  })
-
-  btn150.addEventListener('click',function castVote() {
-    const inputField = document.getElementById('candidato-numero');   
-    inputField.value = 150;
-    console.log("Clicou 150")
-  })
-
-
-// Função para adicionar o item 
+// Função para adicionar o voto ao banco de dados Firebase
 const addItem = async (data) => {
-    
-    const newItemRef = ref(db, 'gremio');
-    const newItemKey = push(newItemRef).key;
+  const newItemRef = ref(db, 'gremio');
+  const newItemKey = push(newItemRef).key;
 
-    try {
-        await set(ref(db, `gremio/${newItemKey}`), data);
-        console.log('Documento adicionado com ID: ', newItemKey);
-       
-       
-       
-    } catch (error) {
-        console.error('Erro ao adicionar votação: ', error);
-        alert('Erro na votação. Tente novamente.');
-    }
+  try {
+    await set(ref(db, `gremio/${newItemKey}`), data);
+    console.log('Voto registrado com ID: ', newItemKey);
+  } catch (error) {
+    console.error('Erro ao registrar voto: ', error);
+    alert('Erro na votação. Tente novamente.');
+  }
 };
 
+// Função para verificar se os botões estão desabilitados
+function verificarEstado() {
+  const estadoConfirmar = localStorage.getItem("confirmarDesabilitado");
 
+  if (estadoConfirmar === "true") {
+    confirmar.disabled = true;
+    confirmar.style.backgroundColor = 'gray';
+    confirmar.style.cursor = 'not-allowed';
 
+    excluir.disabled = true;
+    excluir.style.backgroundColor = 'gray';
+    excluir.style.cursor = 'not-allowed';
+  }
+}
+
+// Definindo o comportamento dos botões de números
+btn120.addEventListener('click', function castVote() {
+  inputField.value = 120;
+  console.log("Clicou 120");
+});
+
+btn200.addEventListener('click', function castVote() {
+  inputField.value = 200;
+  console.log("Clicou 200");
+});
+
+btn150.addEventListener('click', function castVote() {
+  inputField.value = 150;
+  console.log("Clicou 150");
+});
+
+// Evento de "Confirmar" para registrar o voto
 confirmar.addEventListener('click', () => {
-  const inputField = document.getElementById('candidato-numero');
+  const modal = document.querySelector("dialog");
+  const botao = document.querySelector("dialog button");
+  const modalErro = document.querySelector("#erroConfirmar");
+  const botaoErro = document.querySelector("#erroConfirmar button");
 
-  var modal = document.querySelector("dialog");
-  var botal = document.querySelector("dialog button");
-  var modal3 = document.querySelector("#erroConfirmar");
-  var botal3 = document.querySelector("#erroConfirmar button");
-
+  // Verificando se o usuário selecionou um número
   if (!inputField.value) {
-      modal3.showModal();
-      botal3.onclick = function() {
-          modal3.close();
-      };
+    modalErro.showModal();
+    botaoErro.onclick = () => modalErro.close();
   } else {
-      modal.showModal();
-      botal.onclick = function() {
-          modal.close();
-      };
+    modal.showModal();
+    botao.onclick = () => modal.close();
 
-      addItem({
-          "voto": inputField.value,
-      });
+    // Registrar o voto no banco de dados Firebase
+    addItem({ voto: inputField.value });
 
-      
-      confirmar.disabled = true;
-      confirmar.style.backgroundColor = 'gray';
-      confirmar.style.cursor = 'not-allowed';
+    // Desabilitar os botões após confirmar
+    confirmar.disabled = true;
+    confirmar.style.backgroundColor = 'gray';
+    confirmar.style.cursor = 'not-allowed';
+
+    excluir.disabled = true;
+    excluir.style.backgroundColor = 'gray';
+    excluir.style.cursor = 'not-allowed';
+
+    // Salvar o estado de desabilitação no localStorage
+    localStorage.setItem("confirmarDesabilitado", "true");
   }
 });
 
+// Evento de "Excluir" para limpar a escolha do número
 excluir.addEventListener('click', () => {
+  const selectedNumber = inputField.value;
+  const modalExcluir = document.querySelector("#modalexcluir");
+  const botaoExcluir = document.querySelector("#modalexcluir button");
 
-    
-    const inputField = document.getElementById('candidato-numero');
-    const selectedNumber = inputField.value;
-   
-   var modal4 = document.querySelector("#modalexcluir");
-   var botao4 = document.querySelector("#modalexcluir button");
- 
-    var moda2 = document.querySelector("#Excluir");
-   var bota2 = document.querySelector("#Excluir button");
- 
-    if (!selectedNumber) {
-      modal4.showModal();
-      botao4.onclick = function() {
-        modal4.close();
-     };
-    } else {
-      moda2.showModal();
-     bota2.onclick = function() {
-       moda2.close();
-       inputField.value = ''; 
-      };
-   }
- 
+  const modalCancel = document.querySelector("#Excluir");
+  const botaoCancel = document.querySelector("#Excluir button");
+
+  if (!selectedNumber) {
+    modalExcluir.showModal();
+    botaoExcluir.onclick = () => modalExcluir.close();
+  } else {
+    modalCancel.showModal();
+    botaoCancel.onclick = () => {
+      modalCancel.close();
+      inputField.value = '';  // Limpa o número selecionado
+    };
+  }
 });
 
-
-
-
-
-
-
-
- 
+// Verificar o estado ao carregar a página
+verificarEstado();
