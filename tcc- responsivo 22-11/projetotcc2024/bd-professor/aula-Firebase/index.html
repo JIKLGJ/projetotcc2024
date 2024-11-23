@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD com Firebase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD com Firebase Firestore</h1>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Nome do item" required>
+            <input type="text" id="itemDescription" placeholder="Descrição do item" required>
+            <button type="submit">Adicionar Item</button>
+        </form>
+        <button id="showDataBtn">Mostrar Dados</button>
+        <button id="hideDataBtn" style="display: none;">Esconder Dados</button>
+        <ul id="itemList" style="display: none;"></ul>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
