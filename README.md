@@ -9,7 +9,7 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 
 
 
-<h1 > 📊 Porcentagem das Tecnologias usadas </h1>
+<h1 > 📊 Tecnologias usadas </h1>
 
 <table>
 <tr>
