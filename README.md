@@ -35,7 +35,13 @@ Concluímos que a implementação de tecnologias digitais no ambiente escolar po
 As pastas do projeto estão organizadas de forma que todos os arquivos HTML estão dentro de uma pasta chamada html, os arquivos JavaScript estão na pasta js, e os arquivos CSS estão na pasta css.
 Essa organização pode ser melhorada para facilitar a manutenção e escalabilidade, separando os arquivos não apenas por tipo, e uma pasta separada só para imagens 
 
-
+- projeto tcc 2024
+-- cadstro
+  --- cadastro js
+  -- imagem
+  --
+  fazer uma estrutura de pasta em markdopwn para essas pastas 
+  
 <h1 > :computer: Autores do projeto  </h1>
 <br>- Giovana Beloni de Lucena<br> 
 <br>- Juan Aparecido Ramos<br>  
