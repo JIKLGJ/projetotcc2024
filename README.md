@@ -39,7 +39,26 @@ Essa organização pode ser melhorada para facilitar a manutenção e escalabili
 -- cadstro
   --- cadastro js
   -- imagem
-  --
+# Estrutura de Pastas
+
+- tcc2024
+  - Cadastro
+  - Imagens
+  - Senha
+    - Suporte Juan
+      - suporte.css
+      - suporte.js
+  - Suporte Cadastro
+  - Suporte Login
+  - Tela de Login
+    - login.css
+    - login.js
+  - Urna
+    - Clube
+    - Eletiva
+    - Grêmio
+    - Tutoria
+
   fazer uma estrutura de pasta em markdopwn para essas pastas 
   
 <h1 > :computer: Autores do projeto  </h1>
