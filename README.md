@@ -7,7 +7,7 @@ Utilizamos tecnologias como HTML, CSS, JavaScript e um banco de dados NoSQL para
 Temos como propósito que o web app não apenas aumente a participação nas votações, mas também melhore a organização e a transparência do processo.  A página de Suporte aplicada aos usuários indicou um acolhimento positivo e sugestões para futuras melhorias.
 Concluímos que a implementação de tecnologias digitais no ambiente escolar pode aprimorar a participação democrática, promover a inclusão e facilitar a gestão de processos eleitorais.
 
-
+ 
 
 <h1 > 📊 Tecnologias usadas </h1>
 
